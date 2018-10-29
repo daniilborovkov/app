@@ -2515,7 +2515,13 @@ $(document).ready(function(){
 
 	// 0. random number
 	function getRandom(min, max) {
-		return parseInt(Math.random() * (max - min + 1)) + min;
+		var index = parseInt(Math.random() * (max - min + 1)) + min;
+		if (index != lastIndex) {
+			lastIndex = index;
+			return index;
+		} else {
+			getRandom(min, max);
+		}
 	}
 	// 1. define all images list
 	var unusedImages = []; // all images list. We get it from html block
@@ -2526,7 +2532,10 @@ $(document).ready(function(){
 	var maxIndex = 31;
 	// 4. function to change random images in interval
 
-	var timer = setInterval(randomImagesChange, 3 * 1000);
+	// last index to remove repeat
+	var lastIndex = 0;
+
+	var timer = setInterval(randomImagesChange, 2 * 1000);
 
 	function randomImagesChange() {
 			// get random index for line change
@@ -2540,8 +2549,11 @@ $(document).ready(function(){
 			nowShows.push(unusedSrc);
 			// change image
 			$('.grid-item[data-index='+ lineIndex +']').find('img').fadeOut();
-			$('.grid-item[data-index='+ lineIndex +']').find('img').attr('src', unusedSrc);
-			$('.grid-item[data-index='+ lineIndex +']').find('img').fadeIn();
+			setTimeout(function () {
+				$('.grid-item[data-index='+ lineIndex +']').find('img').attr('src', unusedSrc);
+				$('.grid-item[data-index='+ lineIndex +']').find('img').fadeIn();
+			}, 1* 1000);
+			
 			// remove image from unused 
 			unusedImages.splice(unusedIndex, 1);
 			// and add it to used
