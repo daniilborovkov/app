@@ -2535,7 +2535,7 @@ $(document).ready(function(){
 	// last index to remove repeat
 	var lastIndex = 0;
 
-	var timer = setInterval(randomImagesChange, 2 * 1000);
+	var timer = setInterval(randomImagesChange, 4 * 1000);
 	var indexMain = 0;
 
 	function randomImagesChange() {
@@ -2550,10 +2550,12 @@ $(document).ready(function(){
 			nowShows.push(unusedSrc);
 			// change image
 			$('.grid-item[data-index='+ lineIndex +']').find('img').fadeOut();
-			setTimeout(function () {
+			setTimeout(function(){
 				$('.grid-item[data-index='+ lineIndex +']').find('img').attr('src', unusedSrc);
+			},600);
+			setTimeout(function () {
 				$('.grid-item[data-index='+ lineIndex +']').find('img').fadeIn();
-			}, 1 * 1000);
+			}, 1* 1000);
 			
 			// remove image from unused 
 			unusedImages.splice(unusedIndex, 1);
@@ -2579,7 +2581,7 @@ $(document).ready(function(){
 				usedImages.slice(indexUsed, 1);
 			}
 		});
-		timer = setInterval(randomImagesChange, 3 * 1000)
+		timer = setInterval(randomImagesChange, 4 * 1000)
 	}
 	// 8. fill unused images
 	function fillImages() {
