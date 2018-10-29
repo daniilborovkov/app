@@ -2525,47 +2525,52 @@ $(document).ready(function(){
 	// 3. define images index max
 	var maxIndex = 31;
 	// 4. function to change random images in interval
-	function randomImagesChange() {
-		console.log('get_random_index', );
-		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeOut();
-		// setTimeout(function(){
-		// 	if (usedImages.indexOf(randArr) != -1) {
-		// 		//console.log('index ' + randArr);
-		// 		//randArr = getRandom(0, 30);
-		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
-		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
-		// 	} else {
-		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
-		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
-				
-		// 	}
-		// 	usedImages.push(randArr);
-			
+	function randomImagesChange() {			
 		// },600);
-		setTimeout(function () {
+		setInterval(function () {
 			// get random index for line change
 			var lineIndex = getRandom(1, maxIndex);
+			// TODO: remove old image from show now
 			// get random image from unused
 			var unusedIndex = Math.floor(Math.random() * unusedImages.length);
-			console.log('unused_images_index', unusedIndex);
+			var unusedSrc = unusedImages[unusedIndex];
+			// add src to shows now
+			nowShows.push(unusedSrc);
 			// change image
+			$('.grid-item[data-index='+ lineIndex +']').find('img').fadeOut();
+			$('.grid-item[data-index='+ lineIndex +']').find('img').attr('src', unusedSrc);
+			$('.grid-item[data-index='+ lineIndex +']').find('img').fadeIn();
 			// remove image from unused 
+			unusedImages.splice(unusedIndex, 1);
 			// and add it to used
+			usedImages.push(unusedSrc);
 			// check usused images length
+			console.log('change image ' + unusedSrc + ' on line-index ' + lineIndex);
 		}, 3 * 1000);
 	}
-	// 5. define used images already
-	// 6. recalculate used images
-	// 7. recalculate new arrays
+	// TODO: 6. recalculate used images
+	// TODO: 7. recalculate new arrays
 	// 8. fill unused images
 	function fillImages() {
+		// fill used images array
+		$('.header__photos-grid').find('img').each(function (index) {
+			var imgSrc = $(this).attr('src');
+			usedImages.push(imgSrc);
+		})
 		// get all images array
-		var images = $('header_photos_initial img');
-		// push it to array
+		$('.header_photos_initial').find('img').each(function (index) {
+			var imgSrc = $(this).attr('src');
+			if (unusedImages.indexOf(imgSrc) === -1 && usedImages.indexOf(imgSrc) === -1) {
+				unusedImages.push(imgSrc);
+			}
+		});	
 	}
 
-	fillImages();
-	randomImagesChange();
+	$(document).ready(function () {
+		fillImages();
+		randomImagesChange();
+	});
+	
 
 
 	// Рандомная картинка в рандомном блоке на 1 экране (каждые 5 секунд)
