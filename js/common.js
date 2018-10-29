@@ -2590,7 +2590,7 @@ $(document).ready(function(){
 		})
 		// get all images array
 		$('.header_photos_initial').find('img').each(function (index) {
-			var imgSrc = $(this).attr('src');
+			var imgSrc = $(this).attr('data-src');
 			if (unusedImages.indexOf(imgSrc) === -1 && usedImages.indexOf(imgSrc) === -1) {
 				unusedImages.push(imgSrc);
 			}
