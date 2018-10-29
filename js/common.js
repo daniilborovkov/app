@@ -2513,51 +2513,103 @@ $(document).ready(function(){
 		$('.lazy').lazy();
 	});
 
+	// 0. random number
+	function getRandom(min, max) {
+		return parseInt(Math.random() * (max - min + 1)) + min;
+	}
+	// 1. define all images list
+	var unusedImages = []; // all images list. We get it from html block
+	// 2. define used images array
+	var usedImages = []; // used images array
+	var nowShows = []; // images displayed now
+	// 3. define images index max
+	var maxIndex = 31;
+	// 4. function to change random images in interval
+	function randomImagesChange() {
+		console.log('get_random_index', );
+		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeOut();
+		// setTimeout(function(){
+		// 	if (usedImages.indexOf(randArr) != -1) {
+		// 		//console.log('index ' + randArr);
+		// 		//randArr = getRandom(0, 30);
+		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
+		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
+		// 	} else {
+		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
+		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
+				
+		// 	}
+		// 	usedImages.push(randArr);
+			
+		// },600);
+		setTimeout(function () {
+			// get random index for line change
+			var lineIndex = getRandom(1, maxIndex);
+			// get random image from unused
+			var unusedIndex = Math.floor(Math.random() * unusedImages.length);
+			console.log('unused_images_index', unusedIndex);
+			// change image
+			// remove image from unused 
+			// and add it to used
+			// check usused images length
+		}, 3 * 1000);
+	}
+	// 5. define used images already
+	// 6. recalculate used images
+	// 7. recalculate new arrays
+	// 8. fill unused images
+	function fillImages() {
+		// get all images array
+		var images = $('header_photos_initial img');
+		// push it to array
+	}
+
+	fillImages();
+	randomImagesChange();
+
 
 	// Рандомная картинка в рандомном блоке на 1 экране (каждые 5 секунд)
-	var usedImages = [];
-	setInterval(function(){
+	// var usedImages = [];
+	// setInterval(function(){
 		
-		function getRandom(min, max) {
-			return parseInt(Math.random() * (max - min + 1)) + min;
-		}
+		
 
-		var randomNumber = getRandom(1, 31);
-		var randArr = getRandom(0, 30);
+	// 	var randomNumber = getRandom(1, 31);
+	// 	var randArr = getRandom(0, 30);
 
-		let arrImages = [
-			'./img/header-images/1.jpg',
-			'./img/header-images/2.jpg',
-			'./img/header-images/3.jpg',
-			'./img/header-images/4.jpg',
-			'./img/header-images/5.jpg',
-			'./img/header-images/6.jpg',
-			'./img/header-images/7.jpg',
-			'./img/header-images/8.jpg',
-			'./img/header-images/9.jpg',
-			'./img/header-images/10.jpg',
-			'./img/header-images/11.jpg',
-			'./img/header-images/12.jpg',
-			'./img/header-images/13.jpg',
-			'./img/header-images/14.jpg',
-			'./img/header-images/15.jpg',
-			'./img/header-images/16.jpg',
-			'./img/header-images/17.jpg',
-			'./img/header-images/18.jpg',
-			'./img/header-images/19.jpg',
-			'./img/header-images/20.jpg',
-			'./img/header-images/21.jpg',
-			'./img/header-images/22.jpg',
-			'./img/header-images/23.jpg',
-			'./img/header-images/24.jpg',
-			'./img/header-images/25.jpg',
-			'./img/header-images/26.jpg',
-			'./img/header-images/27.jpg',
-			'./img/header-images/28.jpg',
-			'./img/header-images/29.jpg',
-			'./img/header-images/30.jpg',
-			'./img/header-images/31.jpg',
-		];
+	// 	let arrImages = [
+	// 		'./img/header-images/1.jpg',
+	// 		'./img/header-images/2.jpg',
+	// 		'./img/header-images/3.jpg',
+	// 		'./img/header-images/4.jpg',
+	// 		'./img/header-images/5.jpg',
+	// 		'./img/header-images/6.jpg',
+	// 		'./img/header-images/7.jpg',
+	// 		'./img/header-images/8.jpg',
+	// 		'./img/header-images/9.jpg',
+	// 		'./img/header-images/10.jpg',
+	// 		'./img/header-images/11.jpg',
+	// 		'./img/header-images/12.jpg',
+	// 		'./img/header-images/13.jpg',
+	// 		'./img/header-images/14.jpg',
+	// 		'./img/header-images/15.jpg',
+	// 		'./img/header-images/16.jpg',
+	// 		'./img/header-images/17.jpg',
+	// 		'./img/header-images/18.jpg',
+	// 		'./img/header-images/19.jpg',
+	// 		'./img/header-images/20.jpg',
+	// 		'./img/header-images/21.jpg',
+	// 		'./img/header-images/22.jpg',
+	// 		'./img/header-images/23.jpg',
+	// 		'./img/header-images/24.jpg',
+	// 		'./img/header-images/25.jpg',
+	// 		'./img/header-images/26.jpg',
+	// 		'./img/header-images/27.jpg',
+	// 		'./img/header-images/28.jpg',
+	// 		'./img/header-images/29.jpg',
+	// 		'./img/header-images/30.jpg',
+	// 		'./img/header-images/31.jpg',
+	// 	];
 
 
 		//console.log(randomNumber);
@@ -2565,23 +2617,23 @@ $(document).ready(function(){
 		
 		
 		//console.log(usedImages);
-		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeOut();
-		setTimeout(function(){
-			if (usedImages.indexOf(randArr) != -1) {
-				//console.log('index ' + randArr);
-				//randArr = getRandom(0, 30);
-				//$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
-				//$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
-			} else {
-				$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
-				$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
+		// $('.grid-item[data-index='+ randomNumber +']').find('img').fadeOut();
+		// setTimeout(function(){
+		// 	if (usedImages.indexOf(randArr) != -1) {
+		// 		//console.log('index ' + randArr);
+		// 		//randArr = getRandom(0, 30);
+		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
+		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
+		// 	} else {
+		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
+		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
 				
-			}
-			usedImages.push(randArr);
+		// 	}
+		// 	usedImages.push(randArr);
 			
-		},600);
+		// },600);
 		
-	},3000);
+	// },3000);
 
 	// Полоса с фотками
 	/*$("#scroller").simplyScroll({
