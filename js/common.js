@@ -2536,6 +2536,7 @@ $(document).ready(function(){
 	var lastIndex = 0;
 
 	var timer = setInterval(randomImagesChange, 2 * 1000);
+	var indexMain = 0;
 
 	function randomImagesChange() {
 			// get random index for line change
@@ -2552,7 +2553,7 @@ $(document).ready(function(){
 			setTimeout(function () {
 				$('.grid-item[data-index='+ lineIndex +']').find('img').attr('src', unusedSrc);
 				$('.grid-item[data-index='+ lineIndex +']').find('img').fadeIn();
-			}, 1* 1000);
+			}, 1 * 1000);
 			
 			// remove image from unused 
 			unusedImages.splice(unusedIndex, 1);
@@ -2563,8 +2564,7 @@ $(document).ready(function(){
 
 			if (unusedImages.length < 1) {
 				clearInterval(timer);
-				fillImages();
-
+				recalculateArrays();
 			}
 	}
 	// 6. recalculate used images
