@@ -2534,9 +2534,8 @@ $(document).ready(function(){
 
 	// last index to remove repeat
 	var lastIndex = 0;
-
-	var timer = setInterval(randomImagesChange, 4 * 1000);
 	var indexMain = 0;
+	var timer;
 
 	function randomImagesChange() {
 			// get random index for line change
@@ -2544,8 +2543,9 @@ $(document).ready(function(){
 			// TODO: remove old image from show now
 			nowShows.splice(nowShows.indexOf($('.grid-item[data-index='+ lineIndex +']').find('img').attr('src')), 1);
 			// get random image from unused
-			var unusedIndex = Math.floor(Math.random() * unusedImages.length);
+			var unusedIndex = unusedImages.length > 1 ? Math.floor(Math.random() * (unusedImages.length - 1)) : 0;
 			var unusedSrc = unusedImages[unusedIndex];
+			console.log("unused index " + unusedIndex + " with src " + unusedSrc + " of total count " + unusedImages.length );
 			// add src to shows now
 			nowShows.push(unusedSrc);
 			// change image
@@ -2564,7 +2564,8 @@ $(document).ready(function(){
 			// check usused images length
 			console.log('change image ' + unusedSrc + ' on line-index ' + lineIndex);
 
-			if (unusedImages.length < 1) {
+			if (unusedImages.length === 0) {
+				console.warn('clear interval')
 				clearInterval(timer);
 				recalculateArrays();
 			}
@@ -2575,10 +2576,12 @@ $(document).ready(function(){
 		// exclude from used images now shows
 		nowShows.forEach(function (item) {
 			var indexUsed = usedImages.indexOf(item);
-			if (indexUsed != -1) {
+			
+			if (indexUsed > -1) {
 				// write it to unused
 				unusedImages.push(item);
 				usedImages.slice(indexUsed, 1);
+				console.log(' push to unused ' + item)
 			}
 		});
 		timer = setInterval(randomImagesChange, 4 * 1000)
@@ -2589,19 +2592,21 @@ $(document).ready(function(){
 		$('.header__photos-grid').find('img').each(function (index) {
 			var imgSrc = $(this).attr('src');
 			usedImages.push(imgSrc);
+			nowShows.push(imgSrc);
 		})
 		// get all images array
 		$('.header_photos_initial').find('img').each(function (index) {
 			var imgSrc = $(this).attr('data-src');
-			if (unusedImages.indexOf(imgSrc) === -1 && usedImages.indexOf(imgSrc) === -1) {
+			if (unusedImages.indexOf(imgSrc) === -1 && nowShows.indexOf(imgSrc) === -1) {
 				unusedImages.push(imgSrc);
 			}
 		});	
+		console.log(nowShows.length);
 	}
 
 	$(document).ready(function () {
 		fillImages();
-		randomImagesChange();
+		timer = setInterval(randomImagesChange, 4 * 1000);
 	});
 	
 
