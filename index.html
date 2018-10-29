@@ -1,0 +1,2597 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>ОренКонверт</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#f2f7fa">
+	<meta name="viewport" content="width=1240">
+	<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="libs/swiper.min.css">
+	<link rel="stylesheet" href="libs/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" href="libs/magnific-popup.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/main.min.css" />
+</head>
+<body>
+<svg style="display: none;"> 
+	<symbol id="preim1" viewBox="0 0 56 47"> 
+		<defs><path id="uvloa" d="M404.5 404.15c.3.84.65 1.68 1.05 2.5l-10.66 5.77-19.9-12.36v-24l20.93-7.72 21.36 8.58v6.56a3.56 3.56 0 0 0-2.68 1.68l-.03.04v-5.32l-18.31 7.72v21zm7.86-26.28l-6.97-2.8-16.67 6.9 6.22 3.25zm-16.48-6.63l-16.22 5.99 5.93 3.1 16.21-6.71zm-18.2 27.3l15.87 9.86v-20.86l-6.76-3.52v6.44l-2.7-1.47v-6.39l-6.4-3.35zm40.64 16.35c-.18.08-.36.11-.53.11h-.11c-.17 0-.35-.03-.53-.1-13.58-5.76-12.34-23.45-12.28-24.2a1.36 1.36 0 0 1 1.5-1.24c7.58.9 10.06-2.86 10.16-3.02.24-.37.63-.58 1.04-.62h.07c.5-.06 1.02.17 1.3.63.12.18 2.6 3.9 10.14 3a1.35 1.35 0 0 1 1.5 1.25c.07.75 1.3 18.44-12.26 24.2zm9.6-22.61c-5.57.3-8.7-1.72-10.18-3.13-1.5 1.42-4.62 3.43-10.2 3.13.01 3.98.89 15.58 10.2 19.9 9.29-4.32 10.17-15.92 10.18-19.9zm-5.94 2.96l2.14 1.65-6.43 8.31-5.43-4.41 1.7-2.1 3.28 2.66z"/></defs><g><g transform="translate(-375 -368)"><use fill="#0f1a4d" xlink:href="#uvloa"/></g></g>
+	</symbol> 
+	<symbol id="preim2" viewBox="0 0 44 43"> 
+		<defs><path id="ua33a" d="M779.7 394.34c-.32 1.67-2.84 1.2-2.53-.47.31-1.67 2.83-1.2 2.52.47zm-.21 2.77a1.28 1.28 0 1 1-2.12 1.45 1.28 1.28 0 0 1 2.12-1.45zM747 407.31h43.99V413h-2.7v-3H749.7v3H747zm10.7-10.27v6.48H755v-6.48zm9-21.11H764v-5.94h6.96v5.94h-2.7v-3.24h-1.56zm10.99-2.16h-2.7v-3.78h2.7zm.35 15.9a4.56 4.56 0 1 1 .01-9.1 4.56 4.56 0 0 1 0 9.1zm1.86-4.54c0-2.45-3.7-2.45-3.7 0 0 2.44 3.7 2.44 3.7 0zm11.1-5.37v10.8h-4.86v15.12h-2.7v-22.6a5.13 5.13 0 0 0-5.1-5.23c-2.48 0-4.03 2.83-9.39 3.18l-9-.03a3.18 3.18 0 0 1-3.15-3.18 3.06 3.06 0 0 0-6.11 0v15.38l6.31-.01c.6-2.1 2.53-3.7 4.81-3.7h6.8a5.2 5.2 0 0 1 5.1 5.12v10.53h-2.7v-10.53a2.5 2.5 0 0 0-2.4-2.43h-6.8c-1.27 0-2.48 1.16-2.48 2.43v1.35h-11.34v-18.14a5.76 5.76 0 1 1 11.5 0c0 .26.2.48.46.48 8.94.03 10.55.42 13.7-1.52 1.76-1.08 3.3-1.63 4.68-1.63a7.7 7.7 0 0 1 7.27 5.1v-.49zm-2.7 2.7h-1.93c0 .54-.23.47-.23.62v4.78h2.16z"/></defs><g><g transform="translate(-747 -370)"><use fill="#0f1a4d" xlink:href="#ua33a"/></g></g>
+	</symbol> 
+	<symbol id="phoneLayer" viewBox="0 0 178 31"> 
+		<defs><path id="vd17a" d="M634 524a15 15 0 0 1-15 15H473c-2.52 0-4.89-.63-6.97-1.72-4.29 3.69-9.42 2.23-9.42 2.23s5.17-2.1 2.75-9.26A14.94 14.94 0 0 1 458 524v-.01a15 15 0 0 1 15-15H619a15 15 0 0 1 15 15z"/><linearGradient id="vd17b" x1="633.6" x2="456.6" y1="523.99" y2="524.79" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#3d4466" stop-opacity=".66"/><stop offset="1" stop-color="#3d4466" stop-opacity="0"/></linearGradient></defs><g><g transform="translate(-456 -509)"><use fill="#0f1a4d" xlink:href="#vd17a"/><use fill="url(#vd17b)" xlink:href="#vd17a"/></g></g>
+	</symbol> 
+	<symbol id="buyIcon" viewBox="0 0 21 23"> 
+		<defs><path id="beza" d="M899.5 1272.96c-1.38 0-2.58.84-3.09 2.04h6.18a3.36 3.36 0 0 0-3.09-2.04zm0-1.68a5.05 5.05 0 0 1 4.86 3.72h3.12c.22 0 .44.09.6.24l1.67 1.68c.16.16.25.37.25.6v13.96a2.52 2.52 0 0 1-2.52 2.52h-15.96a2.52 2.52 0 0 1-2.52-2.52v-13.96c0-.23.09-.44.25-.6l1.68-1.68a.84.84 0 0 1 .59-.24h3.12a5.05 5.05 0 0 1 4.86-3.72zm8.49 6.79l-1.19-1.1h-14.6l-1.19 1.1v.8h16.98zm-3.45 2.9a.84.84 0 0 0-1.68 0 3.36 3.36 0 0 1-6.72 0 .84.84 0 0 0-1.68 0 5.05 5.05 0 0 0 10.08 0z"/></defs><g><g transform="translate(-889 -1271)"><use fill="#fff" xlink:href="#beza"/></g></g>
+	</symbol> 
+	<symbol id="cartIcon" viewBox="0 0 25 26"> 
+		<defs><path id="vx5oa" d="M1413.5 638.03a6 6 0 0 1-6-6 1 1 0 1 1 2 0 4 4 0 0 0 8 0 1 1 0 1 1 2 0 6 6 0 0 1-6 6zM1403 644a1 1 0 0 0 1 1h19a1 1 0 0 0 1-1v-15h-21zm10.5-21a4 4 0 0 0-3.46 2h6.92a4 4 0 0 0-3.46-2zm0-2c2.6 0 4.83 1.67 5.66 4h3.84a1 1 0 0 1 .7.3l2 1.99a1 1 0 0 1 .3.7v16a3 3 0 0 1-3 3h-19a3 3 0 0 1-3-3v-16a1 1 0 0 1 .3-.7l2-2a1 1 0 0 1 .7-.3h3.84c.83-2.32 3.05-4 5.66-4z"/></defs><g><g transform="translate(-1401 -621)"><use fill="#0f1a4d" xlink:href="#vx5oa"/></g></g>	
+	</symbol>
+	<symbol id="rightArrow" viewBox="0 0 8 13">
+		<defs><path id="s75aa" d="M719.6 8541.44l4.98 5a1.5 1.5 0 0 1 0 2.12l-4.99 5a1.5 1.5 0 0 1-2.12-2.13l3.93-3.93-3.93-3.93a1.5 1.5 0 0 1 2.12-2.13z"/></defs><g><g transform="translate(-717 -8541)"><use fill="#fff" xlink:href="#s75aa"/></g></g>
+	</symbol>	
+	<symbol id="columnIcon" viewBox="0 0 12 12">
+		<defs><path id="kf01a" d="M690 814h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm0 7h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm-7-7h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm0 7h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1z"/></defs><g><g transform="translate(-682 -814)"><use xlink:href="#kf01a"/></g></g>
+	</symbol>
+	<symbol id="dateIcon" viewBox="0 0 13 13">
+		<defs><path id="pv1wa" d="M1014 2586v-12h3.5v-1h1.5v1h3v-1h1.5v1h3.5v12zm2-2h9v-4h-9zm0-8v2h9v-2h-1.5v1h-1.5v-1h-3v1h-1.5v-1z"/></defs><g><g transform="translate(-1014 -2573)"><use fill="#989cb3" xlink:href="#pv1wa"/></g></g>
+	</symbol>
+	<symbol id="popupShare" viewBox="0 0 14 14">
+		<defs><path id="annsa" d="M1066 2802.88a7.01 7.01 0 1 1-14.02.19 7.01 7.01 0 0 1 14.02-.19zm-7.66-3.46c-.02.56.3.9.98.9.8 0 1.28-.54 1.28-1.13 0-.48-.21-.89-.93-.89-.93 0-1.33.65-1.33 1.12zm2.4 6.34l-.27-.37c-.47.37-.95.55-1.1.55-.11 0-.16-.15-.05-.58l.64-2.42c.25-.89.16-1.46-.32-1.46-.59 0-1.95.58-3.13 1.57l.24.4c.37-.26 1-.51 1.15-.51.11 0 .1.15 0 .52l-.56 2.3c-.34 1.3.02 1.6.5 1.6a5.1 5.1 0 0 0 2.9-1.6z"/></defs><g><g transform="translate(-1052 -2796)"><use fill="#fff" xlink:href="#annsa"/></g></g>
+	</symbol>
+	<symbol id="userIcon" viewBox="0 0 11 12">
+		<defs><path id="viha2" d="M411.5 6465a2.4 2.4 0 0 1-2.4-2.4v-1.2a2.4 2.4 0 0 1 4.8 0v1.2a2.4 2.4 0 0 1-2.4 2.4zm4.8 6h-9.6a.6.6 0 0 1-.6-.6v-.6a3.6 3.6 0 0 1 3.6-3.6h3.6a3.6 3.6 0 0 1 3.6 3.6v.6a.6.6 0 0 1-.6.6z"/></defs><g><g opacity=".7" transform="translate(-406 -6459)"><use fill="#fff" xlink:href="#viha2"/></g></g>
+	</symbol>
+	<symbol id="quoteIcon" viewBox="0 0 13 11">
+		<defs><path id="rysaa" d="M1218 5834v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4a5 5 0 0 1 5-5 1 1 0 1 1 0 2 3 3 0 0 0-3 3h2a2 2 0 0 1 2 2zm-7 0v2a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-4a5 5 0 0 1 5-5 1 1 0 1 1 0 2 3 3 0 0 0-3 3h2a2 2 0 0 1 2 2z"/></defs><g><g transform="translate(-1205 -5827)"><use fill="#fff" xlink:href="#rysaa"/></g></g>
+	</symbol>
+	<symbol id="phoneIcon" viewBox="0 0 13 13">
+		<defs><path id="ikeya" d="M498 9332.29c0 .9-.58 1.5-.64 1.57-2.44 2.42-6.45.63-9.16-2.06-1.54-1.54-3.2-4-3.2-6.3 0-1.13.39-2.07 1.14-2.83.04-.03.91-.89 2.06-.64.84.19 2.83 1.65 2.83 3.28a2 2 0 0 1-.63 1.44c-.55.56-.94.72-1.25.73.1.42.52 1.21 1.34 2.03a5 5 0 0 0 2.07 1.38c.04-.35.28-.72.75-1.2a1.96 1.96 0 0 1 2.04-.54 4.5 4.5 0 0 1 2.6 2.7c.04.14.05.29.05.44z"/></defs><g><g transform="translate(-485 -9322)"><use fill="#fff" xlink:href="#ikeya"/></g></g>
+	</symbol>
+	<symbol id="adminIcon" viewBox="0 0 11 12">
+		<defs><path id="n5f9a" d="M499.5 3571a2.4 2.4 0 0 1-2.4-2.4v-1.2a2.4 2.4 0 0 1 4.8 0v1.2a2.4 2.4 0 0 1-2.4 2.4zm4.8 6h-9.6a.6.6 0 0 1-.6-.6v-.6a3.6 3.6 0 0 1 3.6-3.6h3.6a3.6 3.6 0 0 1 3.6 3.6v.6a.6.6 0 0 1-.6.6z"/></defs><g><g transform="translate(-494 -3565)"><use fill="#989cb2" xlink:href="#n5f9a"/></g></g>
+	</symbol>
+</svg>
+<div class="mdn">
+	<div class="mdn-content">
+		<div class="image"></div>
+		<div class="content"></div>
+	</div>
+</div>
+<main class="main-wrapper">
+	
+	<div class="basket-overlay"></div>
+
+	<div class="cookie-block">
+		<div class="container">
+			<p>Продолжая использовать https://orenkonvert.ru/ вы соглашаетесь на использование файлов cookie   ›</p>
+			<a href="#" class="podr">Подробнее</a>
+			<a href="#" class="close-cookie"><span>ОК</span></a>
+		</div>
+	</div>
+
+	
+	<a href="#catalog" class="to-cat scrolled">
+		<p class="to-catalog"><span>к&nbsp;каталогу&nbsp;→</span></p>
+	</a>
+
+	<header class="header">
+		<div class="container">
+			<div class="header__top-block">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<h1 class="header__main-caption"><span data-image="#one-image" data-text="Конверты&nbsp;на&nbsp;выписку,">Конверты на выписку,</span> <span data-image="#two-image" data-text="бортики&nbsp;в&nbsp;кроватку,">бортики в кроватку,</span> <span data-image="#three-image" data-text="комбинезоны">комбинезоны</span> и <span data-image="#four-image" data-text="другие&nbsp;товары">другие товары</span> для новорожденных с доставкой по всей России</h1>
+			<div class="header__main-preim">
+				<div class="preim-block">
+					<div class="icon">
+						<svg width="56" height="47"><use xlink:href="#preim1"></use></svg>
+					</div>
+					<div class="text">
+						Более 500 товаров <br>
+						всегда в наличии на складе
+					</div>
+				</div>
+				<div class="preim-block">
+					<div class="icon">
+						<svg width="44" height="43"><use xlink:href="#preim2"></use></svg>
+					</div>
+					<div class="text">
+						Индивидуальный <br>
+						пошив заказа за 5—7 дней
+					</div>
+				</div>
+			</div>
+			<div class="header__main-phones">
+				<img src="img/logos.png" alt="">
+				<a href="tel:89619434499" class="phone">
+					<div class="phone-layer">
+						<svg width="178" height="31"><use xlink:href="#phoneLayer"></use></svg>
+					</div>
+					<span>8 (961) 943-44-99</span>
+				</a>
+				<span class="text">Подскажем, ответим, объясним</span>
+			</div>
+			<div class="header__photos-grid">
+				<div class="line line-one">
+					<div class="grid-item" data-index="11">
+						<img src="img/header-images/11.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="12">
+						<img src="img/header-images/12.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="13">
+						<img src="img/header-images/13.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="14">
+						<img src="img/header-images/14.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="15">
+						<img src="img/header-images/15.jpg" alt="">
+					</div>
+				</div>
+				<div class="line line-two">
+					<div class="grid-item" data-index="6">
+						<img src="img/header-images/6.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="7">
+						<img src="img/header-images/7.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="8">
+						<img src="img/header-images/8.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="9">
+						<img src="img/header-images/9.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="10">
+						<img src="img/header-images/10.jpg" alt="">
+					</div>
+				</div>
+				<div class="line line-three">
+					<div class="grid-item" data-index="1">
+						<img src="img/header-images/1.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="2">
+						<img src="img/header-images/2.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="3">
+						<img src="img/header-images/3.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="4">
+						<img src="img/header-images/4.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="5">
+						<img src="img/header-images/5.jpg" alt="">
+					</div>
+				</div>
+				<div class="hor-line line-top">
+					<div class="grid-item mini-overlay-image" data-index="16">
+						<img src="img/header-images/16.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="17">
+						<img src="img/header-images/17.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="18">
+						<img src="img/header-images/18.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="19">
+						<img src="img/header-images/19.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="20">
+						<img src="img/header-images/20.jpg" alt="">
+					</div>
+				</div>
+				<div class="hor-line line-bottom">
+					<div class="grid-item overlay-image" data-index="21">
+						<img src="img/header-images/21.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="22">
+						<img src="img/header-images/22.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="23">
+						<img src="img/header-images/23.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="24">
+						<img src="img/header-images/24.jpg" alt="">
+					</div>
+					<div class="grid-item" data-index="25">
+						<img src="img/header-images/25.jpg" alt="">
+					</div>
+				</div>
+				<div class="main-image">
+					<div class="default-image switch-image"></div>
+					<div class="envelopes-image switch-image" id="one-image"></div>
+					<div class="bumpers-image switch-image" id="two-image"></div>
+					<div class="overalls-image switch-image" id="three-image"></div>
+					<div class="others-image switch-image" id="four-image"></div>
+				</div>
+				<div class="last-line">
+					<div class="line">
+						<div class="grid-item overlay-image" data-index="26">
+							<img src="img/header-images/26.jpg" alt="">
+						</div>
+						<div class="grid-item overlay-image" data-index="27">
+							<img src="img/header-images/27.jpg" alt="">
+						</div>
+						<div class="fon-item fon"></div>
+					</div>
+					<div class="line">
+						<div class="grid-item" data-index="28">
+							<img src="img/header-images/28.jpg" alt="">
+						</div>
+						<div class="grid-item overlay-image" data-index="29">
+							<img src="img/header-images/29.jpg" alt="">
+						</div>
+						<div class="grid-item" data-index="30">
+							<img src="img/header-images/30.jpg" alt="">
+						</div>
+					</div>
+					<div class="grid-item last-item overlay-image" data-index="31">
+						<img src="img/header-images/31.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="fixed_menu">
+		<div class="container">
+			<nav class="fixed_menu-nav">
+				<ul>
+					<li><a href="#catalog">Каталог</a></li>
+					<li><a href="#share" class="share-lnk">Акции <span>июня</span> <div class="icon"><img src="img/summer.svg" alt=""></div></a></li>
+					<li><a href="#why">О продукции</a></li>
+					<li><a href="#team">Наша команда</a></li>
+					<li><a href="#ways">Оплата и доставка</a></li>
+					<li><a href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="fixed_menu-cart">
+				<div class="icon">
+					<svg width="25" height="26"><use xlink:href="#cartIcon"></use></svg>
+					<span>6</span>
+				</div>
+				<span>Моя корзина</span>
+				<div class="fixed_menu-cart_dropdown">
+					<div class="products-content">
+					</div>
+					<div class="order-price">
+						<a href="#" class="order">
+							<span>Заказать товары</span>
+							<div class="icon">
+								<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+							</div>
+						</a>
+						<div class="product-price">
+							<div class="qua">
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14"><defs><path id="e61da" d="M1384.54 1051.82l.01.01-6 4v-.02a.97.97 0 0 1-.55.19.97.97 0 0 1-.54-.19l-.02.02-6-4 .02-.01a.98.98 0 0 1-.46-.82 1 1 0 0 1 1-1c.2 0 .39.07.54.18l.01-.01 5.45 3.63 5.45-3.63v.01c.16-.1.34-.18.55-.18a1 1 0 0 1 1 1c0 .35-.19.64-.46.82zm0-4l.01.01-6 4v-.01a.97.97 0 0 1-.55.18.97.97 0 0 1-.54-.18l-.02.01-6-4 .02-.01a.98.98 0 0 1-.46-.82c0-.35.19-.64.46-.82l-.02-.01 6-4 .02.01c.15-.1.33-.18.54-.18.2 0 .39.08.54.18l.01-.01 6 4v.01c.26.18.45.47.45.82s-.19.64-.46.82zm-6.54-3.62l-4.2 2.8 4.2 2.8 2.71-1.81 1.49-1z"/></defs><g><g transform="translate(-1371 -1042)"><use fill="#989cb2" xlink:href="#e61da"/></g></g></svg>
+								</div>
+								<div class="text"><span class="number">6</span> <span class="tovars">товаров</span> на сумму</div>
+							</div>
+							<div class="total-price">
+								<span>12 900</span>
+								<span class="rubl">&#8381;</span>
+							</div>
+						</div>
+					</div>
+					<div class="offer">
+						Сумма вашего заказа больше 10 000 рублей, <br>
+						мы доставим Ваш заказ Почтой России — БЕСПЛАТНО!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="catalog" id="catalog">
+		<div class="container">
+			<h2 class="catalog__caption">Наш каталог</h2>
+			<div class="catalog__content">
+				<div class="catalog__nav">
+					<div class="catalog__nav-sect">
+						<div class="caption">Комплекты в кроватку</div>
+						<ul>
+							<li><button data-href="complectsinbed/readysets.html" class="active">Готовые наборы</button></li>
+							<li><button data-href="complectsinbed/cridsides.html">Бортики</button></li>
+							<li><button data-href="complectsinbed/pillows.html">Подушки</button></li>
+							<li><button data-href="#">Одеяла</button></li>
+							<li><button data-href="#">Органайзеры</button></li>
+							<li><button data-href="#">Балдахины</button></li>
+							<li><button data-href="#">Простыни</button></li>
+							<li><button data-href="#">Наволочки</button></li>
+							<li><button data-href="#">Пододеяльники</button></li>
+							<li><button data-href="#">Покрывала</button></li>
+							<li><button data-href="#">Одеяла Бонбон</button></li>
+							<li><button data-href="#">Коконы-гнездышки</button></li>
+							<li><button data-href="#">Многофункциональные подушки</button></li>
+						</ul>
+					</div>
+					<div class="catalog__nav-sect">
+						<div class="caption">Комплекты на выписку</div>
+						<ul>
+							<li><button data-href="dischargekits/readysets.html">Готовые наборы</button></li>
+							<li><button data-href="dischargekits/overalls.html">Комбинезоны</button></li>
+							<li><button data-href="dischargekits/envelopeclassic.html">Конверты классические</button></li>
+							<li><button data-href="#">Конверты трансформеры</button></li>
+							<li><button data-href="#">Одеяла на выписку</button></li>
+							<li><button data-href="#">Слипы</button></li>
+							<li><button data-href="#">Шапочки</button></li>
+							<li><button data-href="#">Пеленки &laquo;Кокон&raquo;</button></li>
+						</ul>
+					</div>
+					<div class="catalog__nav-sect">
+						<div class="caption">Игрушки</div>
+						<ul>
+							<li><button data-href="other/softtoys.html">Мягкие игрушки</button></li>
+							<li><button data-href="other/warmertoys.html">Игрушки-грелки</button></li>
+						</ul>
+					</div>
+				</div>
+				<div class="catalog__grid">
+					<div class="catalog__grid-actions">
+						<div class="catalog__grid-actions_quantity sorting">
+							<div class="icon">
+								<svg width="12" height="12"><use xlink:href="#columnIcon"></use></svg>
+							</div>
+							Показывать:
+							<a href="#" class="choice">по 9</a>
+							<div class="dropdown">
+								<div class="default-value">по 9</div>
+								<ul class="button-group" data-filter-group="quaElem">
+									<li><a href="#" class="select one button" data-filter="9">по 9</a></li>
+									<li><a href="#" class="button" data-filter="18">по 18</a></li>
+									<li><a href="#" class="button" data-filter="36">по 36</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog__grid-actions_price sorting">
+							<div class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="12" viewBox="0 0 13 12"><defs><path id="tlkaa" d="M992 817h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1zm-10 3h1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1zm5-6h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1z"/></defs><g><g transform="translate(-981 -814)"><use fill="#989cb3" xlink:href="#tlkaa"/></g></g></svg>
+							</div>
+							Сортировать:
+							<a href="#" class="choice">по возрастанию цены</a>
+							<div class="dropdown">
+								<div class="default-value">по возрастанию цены</div>
+								<ul>
+									<li><a href="#" class="select one" data-option="price" data-sorttype="ass" id="аscending">по возрастанию цены</a></li>
+									<li><a href="#" data-option="price" data-sorttype="dec" id="descending">по убыванию цены</a></li>
+									<li><a href="#" data-option="quantity" data-sorttype="ass">по количеству элементов</a></li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="catalog__grid-actions_reset">
+							<div class="icon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="12" viewBox="0 0 14 12"><defs><path id="h3c8a" d="M1458 825.13v.02c0 .47-.38.85-.85.85h-.7v-.01a.81.81 0 0 1-.23 0 6 6 0 0 1-3.95-9.4l-.97-1.35a.78.78 0 0 1 .63-1.23h3.58c.51 0 .89.48.75.98l-.58 2.08-.42 1.5a.78.78 0 0 1-1.38.25l-.52-.73a4.29 4.29 0 0 0 3.1 6.2h.7c.46 0 .84.38.84.84zm6.7-.38a.78.78 0 0 1-.63 1.24h-3.58a.78.78 0 0 1-.75-.98l.58-2.08.42-1.5a.78.78 0 0 1 1.38-.25l.52.73a4.29 4.29 0 0 0-3.1-6.2h-.7a.85.85 0 0 1-.84-.84v-.02c0-.47.38-.85.84-.85h.7v.01a.8.8 0 0 1 .24 0 6 6 0 0 1 3.95 9.4z"/></defs><g><g transform="translate(-1451 -814)"><use fill="#989cb3" xlink:href="#h3c8a"/></g></g></svg>
+							</div>
+							Сбросить
+						</a>
+					</div>
+					<div class="catalog__grid-sort">
+						<div class="catalog__grid-sort_gender sort">
+							<div class="link">
+								<span>Пол ребенка</span>
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="10" viewBox="0 0 12 10"><defs><path id="lvqca1" d="M912.22 883.51l-3.61-5.71c-1.22-1.9-.62-2.85 1.78-2.83h7.2c2.4-.02 3 .93 1.78 2.83-1.21 1.9-2.42 3.8-3.6 5.71-1.2 1.91-2.36 1.91-3.55 0z"/><clipPath id="lvqcb1"><use fill="#fff" xlink:href="#lvqca1"/></clipPath></defs><g><g transform="translate(-908 -875)"><use fill="#fff" xlink:href="#lvqca1"/><use fill="#fff" stroke="#b8bbcc" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" clip-path="url(&quot;#lvqcb&quot;)" xlink:href="#lvqca1"/></g></g></svg>
+								</div>
+							</div>
+							<div class="dropdown">
+								<ul class="button-group" data-filter-group="gender">
+									<li><a href="#" class="button" data-filter=".m">Мужской</a></li>
+									<li><a href="#" class="button" data-filter=".w">Женский</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog__grid-sort_form sort">
+							<div class="link">
+								<span>Форма кроватки</span>
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="10" viewBox="0 0 12 10"><defs><path id="lvqca2" d="M912.22 883.51l-3.61-5.71c-1.22-1.9-.62-2.85 1.78-2.83h7.2c2.4-.02 3 .93 1.78 2.83-1.21 1.9-2.42 3.8-3.6 5.71-1.2 1.91-2.36 1.91-3.55 0z"/><clipPath id="lvqcb2"><use fill="#fff" xlink:href="#lvqca2"/></clipPath></defs><g><g transform="translate(-908 -875)"><use fill="#fff" xlink:href="#lvqca2"/><use fill="#fff" fill-opacity="0" stroke="#b8bbcc" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#lvqcb&quot;)" xlink:href="#lvqca2"/></g></g></svg>
+								</div>
+							</div>
+							<div class="dropdown" >
+								<ul class="button-group" data-filter-group="form">
+									<li><a href="#" class="button" data-filter=".krug">Круглая</a></li>
+									<li><a href="#" class="button" data-filter=".oval">Овальная</a></li>
+									<li><a href="#" class="button" data-filter=".kvad">Квадратная</a></li>
+									<li><a href="#" class="button" data-filter=".pryam">Прямоугольная</a></li>
+									<li><a href="#" class="button" data-filter=".figur">Фигурная</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="catalog__grid-sort_season sort">
+							<div class="link">
+								<span>Сезон</span>
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="10" viewBox="0 0 12 10"><defs><path id="lvqca3" d="M912.22 883.51l-3.61-5.71c-1.22-1.9-.62-2.85 1.78-2.83h7.2c2.4-.02 3 .93 1.78 2.83-1.21 1.9-2.42 3.8-3.6 5.71-1.2 1.91-2.36 1.91-3.55 0z"/><clipPath id="lvqcb"><use fill="#fff" xlink:href="#lvqca3"/></clipPath></defs><g><g transform="translate(-908 -875)"><use fill="#fff" xlink:href="#lvqca3"/><use fill="#fff" fill-opacity="0" stroke="#b8bbcc" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="4" clip-path="url(&quot;#lvqcb&quot;)" xlink:href="#lvqca3"/></g></g></svg>
+								</div>
+							</div>
+							<div class="dropdown" >
+								<ul class="button-group" data-filter-group="season">
+									<li><a href="#" class="button" data-filter=".summer">Лето</a></li>
+									<li><a href="#" class="button" data-filter=".autumn">Осень</a></li>
+									<li><a href="#" class="button" data-filter=".winter">Зима</a></li>
+									<li><a href="#" class="button" data-filter=".spring">Весна</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="catalog__grid-ajax" id="tab-content">
+					</div>
+					<div class="catalog__grid-zero">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="60" viewBox="0 0 74 60"><defs><path id="va" d="M731 999.06c-6.62 0-12-5.38-12-12a2 2 0 1 1 4 0 8 8 0 0 0 16 0 2 2 0 1 1 4 0c0 6.62-5.38 12-12 12zM710 1011c0 1.1.9 2 2 2h38a2 2 0 0 0 2-2v-30h-42zm21-42a8 8 0 0 0-6.93 4h13.86a8 8 0 0 0-6.93-4zm0-4c5.22 0 9.66 3.34 11.31 8H750a2 2 0 0 1 1.41.58l4 4A2 2 0 0 1 756 979v32a6 6 0 0 1-6 6h-38a6 6 0 0 1-6-6v-32a2 2 0 0 1 .6-1.43l3.99-3.99A2 2 0 0 1 712 973h7.68c1.66-4.66 6.1-8 11.32-8z"/><path id="vb" d="M761 987a19 19 0 1 1 0 38 19 19 0 0 1 0-38z"/><path id="vd" d="M761 996a2 2 0 0 1 2 2v8a2 2 0 0 1-4 0v-8c0-1.1.9-2 2-2zm0 16a2 2 0 1 1 0 4 2 2 0 0 1 0-4z"/><linearGradient id="vc" x1="742" x2="780" y1="1006" y2="1006" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f7ba7c"/><stop offset="1" stop-color="#facc84"/></linearGradient></defs><g><g transform="translate(-706 -965)"><g><use fill="#0f1a4d" xlink:href="#va"/></g><g><use fill="#f7ba7c" xlink:href="#947vb"/><use fill="url(#vc)" xlink:href="#vb"/></g><g><use fill="#fff" xlink:href="#vd"/></g></g></g></svg>
+						</div>
+						<div class="text">
+							<div class="capt">C учетом выбранных параметров нет ни одного товара!</div>
+							<div class="descr">Измените или сбросьте фильтры  —  «Пол ребенка», «Форма кроватки», «Сезон»</div>
+						</div>
+						<img src="img/arrow-1.png" alt="">
+					</div>
+					<div class="catalog__grid-more">
+						<div class="look">
+							<img src="img/arrow.png" alt="">
+							<span>Посмотрите наши акции</span>
+						</div>
+						<a href="#" class="more">
+							<div class="icon">
+								<svg width="12" height="12"><use xlink:href="#columnIcon"></use></svg>
+							</div>
+							<span>Показать ещё</span>
+						</a>
+					</div>		
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="share" id="share">
+		<div class="container cont-share">
+			<div class="share__left">
+				<h2 class="share__left-caption">
+					Ежемесячные
+					спецпредложения
+					от ОренКонверт
+				</h2>
+				<p class="share__left-descr">
+					Каждый месяц мы проводим
+					по две акции — одна в первой
+					половине месяца, а другая <br>
+					во второй половине.
+				</p>
+				<div class="share__left-special">
+			    <span>Мы стараемся чтобы</span>
+					<span>товары и условия проведения</span>
+					<span>всегда были разными</span>
+				</div>
+				<div class="share__left-subscribe">
+					<div class="share__left-subscribe_caption">
+						Подписывайтесь на нас, <br>
+						чтобы ничего не пропускать!
+					</div>
+					<a href="#" target="_blank" class="vk">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="vzana1" d="M399.15 3004h18.7c2.3 0 4.15 1.86 4.15 4.15v18.7c0 2.29-1.86 4.15-4.15 4.15h-18.7a4.16 4.16 0 0 1-4.15-4.16v-18.69c0-2.3 1.86-4.15 4.15-4.15zm9.2 18.93h1.1s.34-.04.51-.22c.16-.17.15-.49.15-.49s-.02-1.5.67-1.71c.68-.22 1.55 1.43 2.47 2.06.7.48 1.22.36 1.22.36h2.47s1.29-.1.68-1.11c-.05-.09-.36-.75-1.84-2.12-1.54-1.44-1.33-1.2.53-3.69 1.13-1.51 1.59-2.43 1.44-2.83-.13-.37-.96-.3-.96-.3l-2.78-.01s-.2-.02-.36.07a.78.78 0 0 0-.24.32s-.44 1.2-1.03 2.19c-1.24 2.1-1.73 2.2-1.93 2.08-.47-.3-.35-1.22-.35-1.87 0-2.04.3-2.89-.6-3.1-.3-.08-.53-.13-1.3-.13-1-.01-1.83 0-2.3.23-.32.16-.56.5-.41.52.18.02.6.11.81.41.29.39.28 1.26.28 1.26s.16 2.4-.38 2.69c-.38.2-.89-.21-2-2.12-.56-.97-.98-2.07-.98-2.07s-.08-.2-.23-.31a1.15 1.15 0 0 0-.43-.17h-2.64s-.4 0-.54.18c-.13.16 0 .47 0 .47s2.06 4.87 4.4 7.3c2.14 2.24 4.57 2.1 4.57 2.1z"/></defs><g><g transform="translate(-395 -3004)"><use fill="#fff" xlink:href="#vzana1"/></g></g></svg>
+						</div>
+						<span>ВКонтакте</span>
+						<div class="arrow">
+							<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+						</div>
+					</a>
+					<a href="#" target="_blank" class="insta">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="dur8a1" d="M408.5 3081.01c3.66 0 4.12.02 5.56.08 1.43.07 2.41.3 3.27.63.89.34 1.64.8 2.4 1.55a6.6 6.6 0 0 1 1.55 2.4c.33.85.56 1.84.63 3.27.06 1.44.08 1.9.08 5.56 0 3.67-.02 4.13-.08 5.57a9.9 9.9 0 0 1-.63 3.27c-.35.9-.8 1.64-1.56 2.4a6.62 6.62 0 0 1-2.39 1.55c-.86.33-1.84.56-3.27.63-1.44.06-1.9.08-5.57.08-3.66 0-4.12-.02-5.56-.08a9.89 9.89 0 0 1-3.28-.63 6.62 6.62 0 0 1-2.39-1.56 6.61 6.61 0 0 1-1.55-2.39 9.9 9.9 0 0 1-.63-3.27c-.06-1.44-.08-1.9-.08-5.57 0-3.66.02-4.12.08-5.56a9.9 9.9 0 0 1 .63-3.27 6.6 6.6 0 0 1 1.55-2.4 6.63 6.63 0 0 1 2.4-1.55 9.94 9.94 0 0 1 3.27-.63c1.44-.06 1.9-.08 5.56-.08 0 0-3.66 0 0 0zm0 2.43c-3.6 0-4.04.02-5.46.08a7.43 7.43 0 0 0-2.5.47c-.63.24-1.08.53-1.56 1-.47.48-.76.93-1 1.56-.19.47-.41 1.19-.47 2.5a93.59 93.59 0 0 0-.08 5.45c0 3.6.01 4.03.08 5.46.06 1.31.28 2.03.46 2.5.25.63.54 1.08 1.01 1.55.48.48.93.77 1.56 1.01.47.19 1.19.4 2.5.47 1.42.06 1.85.08 5.45.08s4.03-.02 5.46-.08a7.48 7.48 0 0 0 2.5-.47 4.19 4.19 0 0 0 1.55-1c.48-.48.77-.93 1.01-1.56.19-.47.4-1.19.47-2.5.06-1.43.08-1.85.08-5.46 0-3.6-.02-4.03-.08-5.45a7.47 7.47 0 0 0-.47-2.5 4.18 4.18 0 0 0-1-1.56 4.17 4.17 0 0 0-1.56-1 7.43 7.43 0 0 0-2.5-.47 94.08 94.08 0 0 0-5.46-.08s3.6 0 0 0zm0 3.8a7.27 7.27 0 1 1 0 14.53 7.27 7.27 0 0 1 0-14.53s-4.02 0 0 0zm0 11.94a4.67 4.67 0 1 0 0-9.35 4.67 4.67 0 0 0 0 9.35s-2.59 0 0 0zm9.02-11.84a1.66 1.66 0 1 1-3.32 0 1.66 1.66 0 0 1 3.32 0"/></defs><g><g transform="translate(-395 -3081)"><use fill="#fff" xlink:href="#dur8a1"/></g></g></svg>
+						</div>
+						<span>Instagram</span>
+						<div class="arrow">
+							<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+						</div>
+					</a>
+					<a href="#" target="_blank" class="youtube">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="21" viewBox="0 0 29 21"><defs><path id="jd4ka1" d="M422.2 3165.95s.27 2.27.27 4.53v2.02c0 2.26-.28 4.52-.28 4.52s-.27 1.93-1.1 2.78c-1.07 1.11-2.26 1.12-2.8 1.18-3.92.28-9.79.3-9.79.3s-7.26-.07-9.5-.29c-.62-.11-2.02-.08-3.08-1.2-.84-.84-1.11-2.77-1.11-2.77s-.28-2.26-.28-4.52v-2.02c0-2.26.28-4.53.28-4.53s.27-1.92 1.1-2.77c1.07-1.11 2.26-1.12 2.8-1.18 3.92-.28 9.78-.28 9.78-.28h.02s5.86 0 9.77.28c.55.06 1.74.07 2.8 1.18.84.85 1.11 2.77 1.11 2.77zm-16.58 9.21l7.54-3.9-7.55-3.95z"/></defs><g><g transform="translate(-394 -3161)"><use fill="#fff" xlink:href="#jd4ka1"/></g></g></svg>
+						</div>
+						<span>Instagram</span>
+						<div class="arrow">
+							<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="share__tabs">
+				<div class="share__tabs-nav">
+					<ul>
+					</ul>
+				</div>
+				<div class="share__tabs-pane faded" data-index="1" id="january">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="2" id="february">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="3" id="march">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="4" id="april">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="5" id="may">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="6" id="june">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="7" id="july">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="8" id="august">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="9" id="september">
+					<div class="shares share-1" data-id="#share3">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<div class="share-order">
+										Для участия в акции Вам <br> необходимо оставить заявку
+									</div>
+									<a href="#share3" class="popup-share open-popup" data-effect="mfp-zoom-in">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2" data-id="#share4">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#share4" class="popup-share open-popup" data-effect="mfp-zoom-in">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="10" id="october">
+					<div class="shares share-1" data-id="#share1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<div class="share-order">
+										Для участия в акции Вам <br> необходимо оставить заявку
+									</div>
+									<a href="#share1" class="popup-share open-popup" data-effect="mfp-zoom-in">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2" data-id="#share2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<div class="share-order">
+										Для участия в акции Вам <br> необходимо оставить заявку
+									</div>
+									<a href="#share2" class="popup-share open-popup" data-effect="mfp-zoom-in">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="11" id="november">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="share__tabs-pane faded" data-index="12" id="december">
+					<div class="shares share-1">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>1 - 15 октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shares share-2">
+						<div class="image">
+							<div class="end">Спецпредложение <br> недействительно</div>
+							<img src="img/share-1.jpg" alt="">
+						</div>
+						<div class="text">
+							<div class="date">
+								<div class="icon">
+									<svg width="13" height="13"><use xlink:href="#dateIcon"></use></svg>
+								</div>
+								<div class="des">Дата проведения акции: <span>16 - <span class="end-month">15</span> октября <span class="autodate"> 2018</span> года</span></div>
+							</div>
+							<div class="caption">При покупке всего набора для кроватки «Зайчики и совушки» действует скидка 25%</div>
+							<div class="share-content">
+								<div class="prices">
+									<div class="new-price">
+										<span>Новая цена</span>
+										<div class="value"><span class="val">6 675</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="your-share">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">2 225</span> <span class="rubl">&#8381;</span></div>
+									</div>
+									<div class="old-price">
+										<span>Ваша скидка</span>
+										<div class="value"><span class="val">8 900</span> <span class="rubl">&#8381;</span></div>
+									</div>
+								</div>
+								<div class="btn-area">
+									<a href="#" class="popup-share">
+										<div class="icon">
+											<svg width="14" height="14"><use xlink:href="#popupShare"></use></svg>
+										</div>
+										<span>Описание и условия акции</span>
+									</a>
+									<div class="to-share">
+										До конца акции <br> осталось <span class="days">10</span> <span class="days-text">дней</span>!
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="non-active-layer">
+							<div class="image">
+								<img src="img/non-active-share.jpg" alt="">
+							</div>
+							<div class="text">
+								<div class="caption">Данная акция <br> пока держится в секрете <img src="img/emodji.png" alt=""></div>
+								<div class="access"><img src="img/date-emo.png" alt="" class="dat"> Она станет доступна 16 <span class="autodate">Июня 2018</span> года! <img src="img/blik-emo.png" alt="" class="blik"></div>
+								<div class="keep">Следите за нашими акциями с социальных сетях : )</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="why" id="why">
+		<div class="container">
+			<h2 class="why__caption">
+				<span>Наша продукция</span>
+				<img src="img/not.png" alt="">
+				<span>Магазинная продукция</span>
+			</h2>
+			<div class="why__descr">
+				Почему мы смело заявляем о том, что наша продукция — <br>
+				это не то же самое что продаётся в магазинах с детскими товарами?
+			</div>
+			<div class="why__content">
+				<div class="why__content-block">
+					<div class="video">
+						<div class="video-content">
+							<video class="videos" data-src="1.mov"  muted src="#" loop></video>
+							<a href="#" class="">
+								<div class="image">
+									<img src="img/play.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="video-substrate"></div>
+					</div>
+					<div class="text">
+						<div class="capt">
+							<div class="img">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="25" viewBox="0 0 32 25"><defs><path id="n7fia" d="M1006.62 3690.37c0-6.2-3.75-9.37-8.12-9.37-2.81 0-5.94.94-7.5 3.75-1.56-2.81-4.69-3.75-7.5-3.75-4.37 0-8.12 3.17-8.12 9.37 0 8.75 12.5 15.62 15.62 15.62 3.12 0 15.62-6.87 15.62-15.62z"/><linearGradient id="n7fib" x1="988.62" x2="993.38" y1="3705.99" y2="3681" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f66"/><stop offset="1" stop-color="#fa9"/></linearGradient></defs><g><g transform="translate(-975 -3681)"><use fill="#f69679" xlink:href="#n7fia"/><use fill="url(#n7fib)" xlink:href="#n7fia"/></g></g></svg>
+							</div>
+							<span>Сшито в России — <br> с любовью</span>
+						</div>
+						<div class="descr">
+							<p>Мы покажем какой долгий путь проходит комплект, прежде чем оказаться у Вас дома. Над воплощением Вашей идеи трудится большая команда. Общаясь в мессенджерах мы помогаем определиться с дизайном, тканью подходящей расцветки, размерами и другими деталями заказа.</p>
+							<p>Далее заказ отправляется на склад тканей, где мы выбираем именно то, что вы искали. Будущий комплект отправляется в наш швейный цех…</p>
+						</div>
+					</div>
+				</div>
+				<div class="why__content-block block-right">
+					<div class="text">
+						<div class="capt">	
+							<span>Ответственно<br> выбираем материалы</span>
+							<div class="img">
+								<img src="img/icon.png" alt="">
+							</div>
+						</div>
+						<div class="descr">
+							<p>Мы покажем какой долгий путь проходит комплект, прежде чем оказаться у Вас дома. Над воплощением Вашей идеи трудится большая команда. Общаясь в мессенджерах мы помогаем определиться с дизайном, тканью подходящей расцветки, размерами и другими деталями заказа.</p>
+							<p>Далее заказ отправляется на склад тканей, где мы выбираем именно то, что вы искали. Будущий комплект отправляется в наш швейный цех…</p>
+						</div>
+					</div>
+					<div class="video">
+						<div class="video-content">
+							<video class="videos" data-src="1.mov"  muted src="#" loop></video>
+							<a href="#" class="">
+								<div class="image">
+									<img src="img/play.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="video-substrate"></div>
+					</div>
+				</div>
+				<div class="why__content-block">
+					<div class="video">
+						<div class="video-content">
+							<video class="videos" data-src="1.mov"  muted src="#" loop></video>
+							<a href="#" class="">
+								<div class="image">
+									<img src="img/play.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="video-substrate"></div>
+					</div>
+					<div class="text">
+						<div class="capt">
+							<div class="img">
+								<img src="img/icon-2.png" alt="">
+							</div>
+							<span>Индивидуально <br> под каждого клиента</span>
+						</div>
+						<div class="descr">
+							<p>Мы покажем какой долгий путь проходит комплект, прежде чем оказаться у Вас дома. Над воплощением Вашей идеи трудится большая команда. Общаясь в мессенджерах мы помогаем определиться с дизайном, тканью подходящей расцветки, размерами и другими деталями заказа.</p>
+							<p>Далее заказ отправляется на склад тканей, где мы выбираем именно то, что вы искали. Будущий комплект отправляется в наш швейный цех…</p>
+						</div>
+					</div>
+				</div>
+				<div class="why__content-block block-right">
+					<div class="text">
+						<div class="capt">	
+							<span>Четыре уровня <br> контроля качества</span>
+							<div class="img">
+								<img src="img/icon-3.png" alt="">
+							</div>
+						</div>
+						<div class="descr">
+							<p>Мы покажем какой долгий путь проходит комплект, прежде чем оказаться у Вас дома. Над воплощением Вашей идеи трудится большая команда. Общаясь в мессенджерах мы помогаем определиться с дизайном, тканью подходящей расцветки, размерами и другими деталями заказа.</p>
+							<p>Далее заказ отправляется на склад тканей, где мы выбираем именно то, что вы искали. Будущий комплект отправляется в наш швейный цех…</p>
+						</div>
+					</div>
+					<div class="video">
+						<div class="video-content">
+							<video class="videos" data-src="1.mov"  muted src="#" loop></video>
+							<a href="#" class="">
+								<div class="image">
+									<img src="img/play.png" alt="">
+								</div>
+							</a>
+						</div>
+						<div class="video-substrate"></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="image-line">
+		<h2>За 2 года работы более 2 600 родителей выбрали <br>
+		продукцию ОренКонверт для своих детей</h2>
+		<div class="scroller">
+			<ul>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/3.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/4.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/5.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/6.jpg" src="#" alt="" class="image-lines">
+				</li>
+				<li>
+					<img data-src="img/line-images/1.jpg" src="#" alt="" class="image-lines">
+					<img data-src="img/line-images/2.jpg" src="#" alt="" class="image-lines">
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="team" id="team">
+		<div class="container">
+			<div class="team__top-line">
+				<div class="team__top-line_text">
+					<h2 class="team__top-line_text-caption">Команда мастериц</h2>
+					<div class="team__top-line_text-descr">
+						<div class="left">
+							<p>Lorem ipsum dolor sit amet, consecteturad ipis cing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duisvulputa te commodo lectus, ac blandit elit tincidun tid. Sed rhoncus, tortor sed eleifendtris tique, tortor mauris molestie vulputate.</p>
+							<img src="img/mini-logo.png" alt="">
+						</div>
+						<div class="left">
+							<p>Lorem ipsum dolor sit amet, consecteturadipisc ingelit. Nulla quam velit, vulputate eu pharerane, mattis ac neque. Duis vulputate comodolectus ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie el lacinia ipsum quam nec duisit.</p>
+							<p>Vehicula eu diam pellentesque rhoncus aliqua mattis. Ut vulputate eros sed felis sodales necl vulputate justo hendrerit. Vivamus varius pre ligula aliquam.</p>
+						</div>
+					</div>
+				</div>
+				<div class="team__top-line_interestingfacts">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+							<div class="swiper-slide fact-1 swiper-lazy" data-background="img/fact-1.jpg" >
+								<div class="caption">
+									<div class="icon">
+										<svg width="13" height="11"><use xlink:href="#quoteIcon"></use></svg>
+									</div>
+									<div class="text">
+										Интересный факт
+									</div>
+								</div>
+								<div class="content">
+									<p>Граждане Канады на первом месте <br>
+									среди покупателей нашей продукции <br>
+									из иностанных государств.</p>
+									<p>На втором месте - Французы. <br>
+									На третьем - Греки.</p>
+								</div>
+							</div>
+							<div class="swiper-slide fact-2 swiper-lazy" data-background="img/fact-1.jpg" >
+								<div class="caption">
+									<div class="icon">
+										<svg width="13" height="11"><use xlink:href="#quoteIcon"></use></svg>
+									</div>
+									<div class="text">
+										Интересный факт
+									</div>
+								</div>
+								<div class="content">
+									<p>Граждане Канады на первом месте <br>
+									среди покупателей нашей продукции <br>
+									из иностанных государств.</p>
+
+									<p>На втором месте - Французы. <br>
+									На третьем - Греки.</p>
+								</div>
+							</div>
+							<div class="swiper-slide fact-3">Slide 3</div>
+							<div class="swiper-slide fact-4">Slide 4</div>
+							<div class="swiper-slide fact-5">Slide 5</div>
+							<div class="swiper-slide fact-6">Slide 6</div>
+							<div class="swiper-slide fact-7">Slide 7</div>
+							<div class="swiper-slide fact-8">Slide 8</div>
+							<div class="swiper-slide fact-9">Slide 9</div>
+							<div class="swiper-slide fact-10">Slide 10</div>
+					    </div>
+					    <!-- Add Arrows -->
+					    <div class="swiper-button-next"></div>
+					    <div class="swiper-button-prev"></div>
+				  	</div>
+				</div>
+			</div>
+			<div class="team__content">
+				<div class="team__content-item">
+					<div class="image">
+						<img data-src="img/big_story.jpg" src="#" alt="">
+						<div class="text">
+							<div class="name">Лена Степанова</div>
+							<div class="position">
+								<div class="icon">
+									<svg width="11" height="12"><use xlink:href="#userIcon"></use></svg>
+								</div>
+								<span>Превосходная раскройщица</span>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<div class="team-text" data-dot>
+							<p>С чего начинается работа над каждым заказом? Совершенно верно, с раскроя. Этим весьма ответственным делом занимается в нашей команде волшебница - Лена.</p>
+
+							<p>Именно с нее начинается история создания каждого комплекта белья, комбинезона. Потому что Лена ведет учет ткани на складе. Это Лена следит за тем, чтобы ваши любимые расцветки всегда были в наличии. Это ее заботливые руки принимают ткань, обрабатывают ее паром, кроят и передают в работу в швейный цех.</p>
+
+							<p>Лена - очень эмоциональная и добрая. Ей многое пришлось пережить, но это ее не сломало. Сейчас Лена одна воспитывает сына и дочь и с успехом трудится в нашем дружной команде. Постоянно менять одну работу на другую - это не про Лену, потому что она очень привязывается к коллективу, как к семье. И мы рады, что смогли стать для нее родными людьми.</p>
+						</div>
+						<a href="#" class="">
+							<div class="icon">
+								<img src="img/ic.png" alt="">
+							</div>
+							<span>История Елены</span>
+						</a>
+					</div>
+				</div>
+				<div class="team__content-item">
+					<div class="image">
+						<img data-src="img/big_story.jpg" src="#" alt="">
+						<div class="text">
+							<div class="name">Лена Степанова</div>
+							<div class="position">
+								<div class="icon">
+									<svg width="11" height="12"><use xlink:href="#userIcon"></use></svg>
+								</div>
+								<span>Превосходная раскройщица</span>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<div class="team-text" data-dot>
+							<p>С чего начинается работа над каждым заказом? Совершенно верно, с раскроя. Этим весьма ответственным делом занимается в нашей команде волшебница - Лена.</p>
+
+							<p>Именно с нее начинается история создания каждого комплекта белья, комбинезона. Потому что Лена ведет учет ткани на складе. Это Лена следит за тем, чтобы ваши любимые расцветки всегда были в наличии. Это ее заботливые руки принимают ткань, обрабатывают ее паром, кроят и передают в работу в швейный цех.</p>
+
+							<p>Лена - очень эмоциональная и добрая. Ей многое пришлось пережить, но это ее не сломало. Сейчас Лена одна воспитывает сына и дочь и с успехом трудится в нашем дружной команде. Постоянно менять одну работу на другую - это не про Лену, потому что она очень привязывается к коллективу, как к семье. И мы рады, что смогли стать для нее родными людьми.</p>
+						</div>
+						<a href="#" class="">
+							<div class="icon">
+								<img src="img/ic.png" alt="">
+							</div>
+							<span>История Елены</span>
+						</a>
+					</div>
+				</div>
+				<div class="team__content-item">
+					<div class="image">
+						<img data-src="img/big_story.jpg" src="#" alt="">
+						<div class="text">
+							<div class="name">Лена Степанова</div>
+							<div class="position">
+								<div class="icon">
+									<svg width="11" height="12"><use xlink:href="#userIcon"></use></svg>
+								</div>
+								<span>Превосходная раскройщица</span>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<div class="team-text" data-dot>
+							<p>С чего начинается работа над каждым заказом? Совершенно верно, с раскроя. Этим весьма ответственным делом занимается в нашей команде волшебница - Лена.</p>
+
+							<p>Именно с нее начинается история создания каждого комплекта белья, комбинезона. Потому что Лена ведет учет ткани на складе. Это Лена следит за тем, чтобы ваши любимые расцветки всегда были в наличии. Это ее заботливые руки принимают ткань, обрабатывают ее паром, кроят и передают в работу в швейный цех.</p>
+
+							<p>Лена - очень эмоциональная и добрая. Ей многое пришлось пережить, но это ее не сломало. Сейчас Лена одна воспитывает сына и дочь и с успехом трудится в нашем дружной команде. Постоянно менять одну работу на другую - это не про Лену, потому что она очень привязывается к коллективу, как к семье. И мы рады, что смогли стать для нее родными людьми.</p>
+						</div>
+						<a href="#" class="">
+							<div class="icon">
+								<img src="img/ic.png" alt="">
+							</div>
+							<span>История Елены</span>
+						</a>
+					</div>
+				</div>
+				<div class="team__content-item">
+					<div class="image">
+						<img data-src="img/big_story.jpg" src="#" alt="">
+						<div class="text">
+							<div class="name">Лена Степанова</div>
+							<div class="position">
+								<div class="icon">
+									<svg width="11" height="12"><use xlink:href="#userIcon"></use></svg>
+								</div>
+								<span>Превосходная раскройщица</span>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<div class="team-text" data-dot>
+							<p>С чего начинается работа над каждым заказом? Совершенно верно, с раскроя. Этим весьма ответственным делом занимается в нашей команде волшебница - Лена.</p>
+
+							<p>Именно с нее начинается история создания каждого комплекта белья, комбинезона. Потому что Лена ведет учет ткани на складе. Это Лена следит за тем, чтобы ваши любимые расцветки всегда были в наличии. Это ее заботливые руки принимают ткань, обрабатывают ее паром, кроят и передают в работу в швейный цех.</p>
+
+							<p>Лена - очень эмоциональная и добрая. Ей многое пришлось пережить, но это ее не сломало. Сейчас Лена одна воспитывает сына и дочь и с успехом трудится в нашем дружной команде. Постоянно менять одну работу на другую - это не про Лену, потому что она очень привязывается к коллективу, как к семье. И мы рады, что смогли стать для нее родными людьми.</p>
+						</div>
+						<a href="#" class="">
+							<div class="icon">
+								<img src="img/ic.png" alt="">
+							</div>
+							<span>История Елены</span>
+						</a>
+					</div>
+				</div>
+				<div class="team__content-item">
+					<div class="image">
+						<img data-src="img/big_story.jpg" src="#" alt="">
+						<div class="text">
+							<div class="name">Лена Степанова</div>
+							<div class="position">
+								<div class="icon">
+									<svg width="11" height="12"><use xlink:href="#userIcon"></use></svg>
+								</div>
+								<span>Превосходная раскройщица</span>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<div class="team-text" data-dot>
+							<p>С чего начинается работа над каждым заказом? Совершенно верно, с раскроя. Этим весьма ответственным делом занимается в нашей команде волшебница - Лена.</p>
+
+							<p>Именно с нее начинается история создания каждого комплекта белья, комбинезона. Потому что Лена ведет учет ткани на складе. Это Лена следит за тем, чтобы ваши любимые расцветки всегда были в наличии. Это ее заботливые руки принимают ткань, обрабатывают ее паром, кроят и передают в работу в швейный цех.</p>
+
+							<p>Лена - очень эмоциональная и добрая. Ей многое пришлось пережить, но это ее не сломало. Сейчас Лена одна воспитывает сына и дочь и с успехом трудится в нашем дружной команде. Постоянно менять одну работу на другую - это не про Лену, потому что она очень привязывается к коллективу, как к семье. И мы рады, что смогли стать для нее родными людьми.</p>
+						</div>
+						<a href="#" class="">
+							<div class="icon">
+								<img src="img/ic.png" alt="">
+							</div>
+							<span>История Елены</span>
+						</a>
+					</div>
+				</div>
+				<div class="team__content-item">
+					<div class="image">
+						<img data-src="img/big_story.jpg" src="#" alt="">
+						<div class="text">
+							<div class="name">Лена Степанова</div>
+							<div class="position">
+								<div class="icon">
+									<svg width="11" height="12"><use xlink:href="#userIcon"></use></svg>
+								</div>
+								<span>Превосходная раскройщица</span>
+							</div>
+						</div>
+					</div>
+					<div class="text">
+						<div class="team-text" data-dot>
+							<p>С чего начинается работа над каждым заказом? Совершенно верно, с раскроя. Этим весьма ответственным делом занимается в нашей команде волшебница - Лена.</p>
+
+							<p>Именно с нее начинается история создания каждого комплекта белья, комбинезона. Потому что Лена ведет учет ткани на складе. Это Лена следит за тем, чтобы ваши любимые расцветки всегда были в наличии. Это ее заботливые руки принимают ткань, обрабатывают ее паром, кроят и передают в работу в швейный цех.</p>
+
+							<p>Лена - очень эмоциональная и добрая. Ей многое пришлось пережить, но это ее не сломало. Сейчас Лена одна воспитывает сына и дочь и с успехом трудится в нашем дружной команде. Постоянно менять одну работу на другую - это не про Лену, потому что она очень привязывается к коллективу, как к семье. И мы рады, что смогли стать для нее родными людьми.</p>
+						</div>
+						<a href="#" class="">
+							<div class="icon">
+								<img src="img/ic.png" alt="">
+							</div>
+							<span>История Елены</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ways" id="ways">
+		<div class="container">
+			<h2 class="ways__caption">
+				Способы <br>
+				оплаты и доставки
+			</h2>
+			<div class="ways__items">
+				<div class="ways__items-item yandex">
+					<div class="descr">Для вашего удобства оплата заказа
+					осуществляется через самый простой
+					и безопасный сервис Яндекс.Касса</div>
+					<img data-src="img/logo-yandex.jpg" src="#" alt="" class="lazy">
+					<div class="bank-cards">
+						<span>Вам доступна оплата банковскими картами</span>
+						<img data-src="img/bank-cards.jpg" src="#" alt="" class="lazy">
+					</div>
+					<div class="el-money">
+						<span>Электронными деньгами</span>
+						<img data-src="img/el-money.jpg" src="#" alt="" class="lazy">
+					</div>
+					<div class="inet-bank">
+						<span>А также интернет-банкинг</span>
+						<img data-src="img/inet-bank.jpg" src="#" alt="" class="lazy">
+					</div>
+				</div>
+				<div class="ways__items-item pochta">
+					<div class="descr">Стандартным способом доставки
+					наши покупатели выбрали доставку
+					через Почту России</div>
+					<img data-src="img/logo-pochta.jpg" src="#" alt="" class="lazy">
+					<div class="text">
+						<p>Мы понимаем что есть ситуации, когда
+							товар нужно получить как можно скорее
+							и времени ждать посылку попросту нет…</p>
+
+						<p>В таком случае мы можем предложить Вам
+							доставку через транспортные компании
+							или курьерские службы.</p>
+						<img data-src="img/courier.jpg" src="#" alt="" class="lazy">
+					</div>
+					<div class="free">
+						Если сумма вашего заказа больше 10 000 рублей <br>
+						мы доставим Ваш заказ Почтой России — БЕСПЛАТНО!
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<div class="container">
+			<h2 class="contacts__caption">Будем рады видеть Вас в нашем шоу-руме</h2>
+			<div class="contacts__content">
+				<div class="contact-info">
+					<div class="adress">
+						<span><img data-src="img/adress.png" src="#" alt="" class="lazy">Адрес шоу-рума</span>
+						<p>г. Оренбург, ул. Терешковой, 7 (офис 6)</p>
+						<a href="#map-popup" class="on-map open-popup" data-effect="mfp-zoom-in">
+							<div class="cont">
+								<div class="icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="33" viewBox="0 0 34 33"><defs><path id="mhqa" d="M430.15 8534h18.7c2.3 0 4.15 1.86 4.15 4.15v18.7c0 2.29-1.86 4.15-4.15 4.15h-18.7a4.16 4.16 0 0 1-4.15-4.16v-18.69c0-2.3 1.86-4.15 4.15-4.15z"/><mask id="mhqc" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M426 8534h27v27h-27z"/><use xlink:href="#mhqa"/></mask><filter id="mhqb" width="55.5" height="55.9" x="412" y="8520" filterUnits="userSpaceOnUse"><feOffset dx=".5" dy=".9" in="SourceGraphic" result="FeOffset1048Out"/><feGaussianBlur in="FeOffset1048Out" result="FeGaussianBlur1049Out" stdDeviation="1.6 1.6"/></filter></defs><g><g transform="translate(-423 -8532)"><g filter="url(#mhqb)"><use fill="none" stroke-opacity=".2" stroke-width="0" mask="url(&quot;#mhqc&quot;)" xlink:href="#mhqa"/><use fill="#231f20" fill-opacity=".2" xlink:href="#mhqa"/></g><use fill="#fff" xlink:href="#mhqa"/></g><g transform="translate(-423 -8532)"><image width="14" height="21" transform="translate(432 8538)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAVCAYAAAB2Wd+JAAABzUlEQVQ4T5XTz2sTQRTA8e9LoNTSkyD00h+hgsJSqDut4MGjJz02JxH16kkEQSkICmLx6sGTCLlJehLF/0CRdttiQSxItgjGtmJoY2KqmHkyMbvZxsTVd5rdN599M29mha5QY6YQmUf1FDAGfEDkFap3JQjWo+kSDTSfzxKGN1C9BQx0fxD4gcgdcrkFKRabHWjMbcChtHgoQXClBdX3DSKvgWyaaudP/4bGFIG5BNpA9bysrAQ6OzuNtQVgKpFfjOAOcCROZDInZGlpLd6/axi8ScDP0mpKqfQz8bIhQTDUo9tfgeEDXVVjvgCH48nWerK6+jauODNzDNV30bNtNm201GfA2USVdUTysry8ob5/FJEngB/l92u1SgQdcvifYrdcftQ5R98vIHIhTdYrFfspDEc60PMGGBy8B1zrh6vb2+yWy4Vxay/GMNGIk1g7j8gZ4JBaq/vVquxtbfG9Xq9l4fgofPwDJqvtwPA3cMfQCoWbOVhw47/CTXB/yMu2e18Hz3OXPQ2GcEngcRuem4DnBy5Av2Zswn3gOrA4AfnkvLSlvgCms+CNQuV/YCkDV8fgafeq+lZ0HW3Ag3G43GsrfWEIIxYak7DXC/4Cisuhs0TGBPsAAAAASUVORK5CYII="/></g></g></svg>
+								</div>
+								<div class="text">Посмотреть на карте</div>
+								<div class="arrow">
+									<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="phones">
+						<span><img data-src="img/phones.png" src="#" alt="" class="lazy">Номера телефонов</span>
+						<a href="tel:89619434499">8 (961) 943-44-99 <span>›&nbsp;&nbsp;   Дарья</span></a>
+						<a href="tel:89619434488">8 (961) 943-44-88 <span>›&nbsp;&nbsp;   Анна</span></a>
+					</div>
+					<div class="mail">
+						<span><img data-src="img/mail.png" src="#" alt="" class="lazy">Электронная почта</span>
+						<a href="mailto:info@orenkovert.ru">info@orenkovert.ru</a>
+					</div>
+					<a href="doc.docx" class="download" download>
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14"><defs><path id="wvuwa" d="M453 8830h2a1 1 0 0 1 1 1v4.38l.91-.91a1.5 1.5 0 0 1 2.12 2.12l-3.97 3.97c-.26.27-.6.41-.95.44h5.39a1.5 1.5 0 1 1 0 3h-11a1.5 1.5 0 1 1 0-3h5.39a1.5 1.5 0 0 1-.95-.44l-4-4a1.5 1.5 0 0 1 2.12-2.12l.94.94V8831a1 1 0 0 1 1-1z"/></defs><g><g transform="translate(-447 -8830)"><use fill="#fff" xlink:href="#wvuwa"/></g></g></svg>
+						</div>
+						<span>Скачать карточку организации</span>
+					</a>
+				</div>
+				<div class="video">
+					<div class="vid">
+						<video class="scroll-video" data-src="1.mov"  muted src="#" loop></video>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="questions">
+		<div class="container">
+			<div class="questions__content">
+				<div class="questions__content-leadform">
+					<h2 class="questions__content-leadform_caption">Есть вопросы?</h2>
+					<h2 class="questions__content-leadform_caption">С удовольствием <br> ответим на все!</h2>
+					<form class="questions__content-leadform_form form phone-form">
+						<input type="hidden" name="project_name" value="ОренКонверт">
+						<input type="hidden" name="admin_email" value="maxgraph23@gmail.com">
+						<input type="hidden" name="form_subject" value="Заявка с сайта ОренКонверт">
+						<input type="text" name="name" placeholder="Ваше имя">
+						<input type="tel" name="tel" placeholder="Номер телефона">
+						<button type="submit">
+							<svg width="13" height="13"><use xlink:href="#phoneIcon"></use></svg>
+							<span>Перезвоните мне</span>
+						</button>
+						<div class="prim">Нажимая на кнопку, вы соглашаетесь с нашей <br>
+						<a href="#">политикой обработки персональных данных</a></div>
+					</form>
+				</div>
+				<div class="questions__content-instagram">
+					<div class="top">
+						<div class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="40" viewBox="0 0 142 40"><defs><path id="ess0a" d="M1230.53 8998.98c-.5 3.66-2 5.05-3.82 5.05-.86 0-3.32-.42-4.17-4.14-.62-2.76-.47-7.79-.4-9.32 0-.05-.06-.26-.18.01-.32.74-1.23 2.76-1.77 5-.83 3.41-.9 5.8-.86 6.18.08.79-.86.91-1.3.91-.71 0-1.58-.06-2.28-1.3-.25-.43-.57-1.8-.81-4.13-.33-3.15-.37-5.5-.38-6.3-.01-.4-.25-.34-.46.04-.37.66-1.16 2.01-2 5.48-.5 2.07-.45 4.86-.54 6.51-.03.63-.27.88-.57.94-.44.09-1.63.3-2.8-.14-.26-.1-.62-.3-.68-.46-.1-.26-.17-1.1-.2-2.12-.99 2.32-2.2 2.84-3.47 2.84-1.22 0-3.36-.85-3.8-3.6 0 0-.26.56-.72 1.19-2.05 2.8-6.09 3.52-8.17.21-.1-.16-.2-.33-.29-.51-.74 1.61-2.12 2.7-3.56 2.7-1.23 0-3.31-.83-4.23-3.43-1.35-3.8.13-9.48.21-9.83.08-.3-.04-.38-.43-.35-1.24.08-2.4.07-2.4.07a36.24 36.24 0 0 1-6.75 11.78l.07 4.45c.05 3.05-.6 6.15-1.57 7.58a5.6 5.6 0 0 1-5.03 2.63c-1.99-.15-4.62-1.36-4.4-4.6.18-2.54 2.57-4.72 5.7-7.6l1.88-1.72-.06-1.74-.25.36c-2.04 2.8-6.09 3.52-8.17.21a6.78 6.78 0 0 1-.39-.7c-.99 2.24-2.4 2.89-3.77 2.89a3.83 3.83 0 0 1-3.66-3.58s-.1.31-.72 1.18c-2.03 2.8-6.09 3.52-8.17.21-.44-.69-.78-1.5-1-2.44-.8 2.3-2.61 4.64-4.43 4.64-2.7 0-4.26-2.39-4.63-6.61-2.05 4.89-4.99 6.78-8.66 6.66-.94-.03-2.42-.3-3.1-.62-.8-.35-1.57-.76-1.36-1.53.21-.79.6-1.42 1.26-1.93.26-.19.68-.13.96.05.53.34.75.58 1.26.88 1.78 1.05 2.78-.03 3.05-1.07.34-1.36-.18-2.8-1.77-4.3-.69-.66-1.37-1.26-1.98-1.83l-3.36 5.62c-2.01 3.35-3.89 4.68-5.22 4.68-1.75 0-2.97-1.25-2.71-7.95l.27-6.64c.01-.26-.18-.25-.34-.1-.94.94-2.93 3.57-4.46 8.95-.99 3.46-.99 4.39-1.1 5.24-.1.72-1.98.48-2.32.4a1.28 1.28 0 0 1-.78-.5c-.2-.23-.35-.64-.44-1.14-.1-.5-.13-1.63-.13-2.6l.09-12.85c0-.42.22-.63.67-.63.95 0 2 .45 2.4.66.24.13.34.31.34.5l-.05 8.21s.59-1.56.88-2.42c2.36-6.83 4.86-6.95 5.73-6.95.57 0 1.57.57 2.04.86.77.47 1.23 1 1.2 1.91-.11 2.78-.24 5.46-.24 7.25 0 2.07-.01 4.28.71 4.28.91 0 2.11-2.18 3.7-4.93.58-1 1.26-2.27 1.75-3.22a7.3 7.3 0 0 1-.2-.23 3.26 3.26 0 0 1-.61-3.33c.53-1.71 2.33-3.31 4.52-2.81 1.32.3 1.3 1.68.76 2.88-.76 1.7-1.62 2.54-1.62 2.54a173 173 0 0 1 3.47 2.62c1.82 1.43 2.83 3.13 2.33 5.38 0 0 2.3-1.84 2.96-5.24v-.6c0-1.92.05-8.15.05-8.15-1.19-.04-2.98-.07-4-.1-.9-.04-.2-2.82.44-2.82.7 0 3.07.14 3.77.14 0 0 .06-3.56.19-4.77.08-.8.51-.99 1.46-.8.68.15 1.26.28 1.9.55.27.11.74.3.7.66-.03.43-.19 4.5-.19 4.5s1.73.12 2.35.14c.74.01 2.6.11 2.86.22.58.25.04 2.27-.53 2.3-1.12.06-1.88.04-2.72.05l-2.02.03c-.04.59-.3 6.72-.3 11.02 0 3.23.74 4.75 1.52 4.75 1.34 0 2.97-2.6 3.34-4.87 0-.8.04-1.65.15-2.56.39-3.14 1.14-4.57 2.07-5.85 1.42-1.97 3.28-2.45 5.07-1.91.67.2 1.67.87 2.29 1.85v-.7c0-.3.32-.72.78-.75.35-.03.8.02 1.32.14.5.11 1.58.43 1.59 1.05l-.07 2.26c-.04 2.02-.12 3.24-.12 6.03 0 4.79.67 5.84 1.86 5.84.92 0 1.74-1.48 2.03-2.88-.27-1.41-.3-3.08-.1-5.05.2-2.1.93-4.3 2.06-5.88 1.4-1.97 3.28-2.45 5.07-1.91.67.2 1.67.87 2.29 1.85v-.64c-.02-.47.44-.87 1.2-.81.6.04 1.17.18 1.66.37.56.22.82.39.83.84 0 .2-.05 1.08-.07 2.24a383.46 383.46 0 0 0-.06 9.56 28 28 0 0 0 1.62-2.55 24.75 24.75 0 0 0 2.6-6.48s-1.32-.76-1.1-2.4c.13-1.02.49-1.59 1.01-2.07.88-.81 3.64-1.02 3.34 1.52-.06.48-.13.76-.13.76a43.8 43.8 0 0 0 3.26-.6c1.22-.28 2.07-.05 2.47.4.44.5.61 1.02.4 2.01-.5 2.33-.96 3.94-1.03 6.22-.1 3.49.79 5.5 2.02 5.5.85 0 1.63-.74 2.05-2.55-.35-1.6-.41-3.5-.22-5.36.27-2.55.94-4.33 2.06-5.9 1.42-1.97 3.29-2.45 5.08-1.91.67.2 1.67.87 2.29 1.85v-.68c0-.43.34-.75.82-.78.34-.02.78.03 1.28.15.5.11 1.58.43 1.59 1.05 0 .2-.05 1.1-.07 2.26-.04 2.02-.13 3.24-.13 6.03 0 4.79.56 5.84 1.75 5.84 1.18 0 2.27-2.5 2.6-4.36v-.56c0-4.02.1-9.77.1-9.83 0-.5.15-.83.76-.83.49 0 1.65.28 2.23.45.13.04.57.25.57.88l-.02 6.09s.38-1.1.91-2.74c.67-2.02 1.3-3.71 1.85-4.35.64-.77 2.4-.12 2.98.25.9.56 1.07 1.25 1.07 2.06.03 4.16.26 6.14.36 7.23.02.16.1.15.11.08.16-1.36.85-4.7 2.6-8.92.61-1.5 1.85-1.04 2.7-.73 1.99.72 2.2 1.46 2.15 2.2-.19 3.6-.21 7.21-.06 9.18.19 2.5.93 3.75 1.76 3.75.75 0 1.32-.57 1.87-3.1.16-.72.35-1.15.77-1.15.53 0 .71.68.6 1.56zm-79.49-10.21c-1.66-.17-2.73 1.55-3.16 3.97-.28 1.64-.52 4.66.17 6.88.96 3.07 3.13 2.4 4.22.27.61-1.18.99-2.8 1.1-4.73.21-4.03-.62-6.23-2.33-6.4zm16.7 0c-1.76 0-2.74 2.06-3.15 4.3-.31 1.71-.46 4.44.17 6.55.92 3.08 3.16 2.41 4.22.27.52-1.04 1-2.87 1.1-4.7.23-4.54-.61-6.42-2.33-6.42zm2.77 16.83c-2.72 2.69-4.58 4.88-4.97 7.04-.45 2.43 1.7 3.34 3.3 2.13 1.12-.85 1.65-3.77 1.67-7.1v-2.07zm26.52-16.83c-1.74-.17-2.78 1.64-3.16 4.02-.37 2.35-.34 5.15.17 6.83.94 3.08 3.16 2.41 4.22.27.55-1.1 1-2.68 1.1-4.68.18-4.08-.62-6.28-2.33-6.44zm-96.29 10.85c-.07 2.14-.48 4.1-1.65 5.73-.98 1.37-2.67 2.21-3.06 1.86-.36-.32.11-1.15.4-2.37.29-1.2.45-2.42.45-6.28 0-2.86.08-16.53.08-18.05 0-.86.02-1.32-.37-.99-2.13 1.79-3.82 5.84-3.43 9.48.3 2.8 1.75 3.1 1.24 3.99-.43.75-5.7-1.54-4.44-6.96 1-4.28 4.17-7.69 7.05-8.9 1.21-.5 3.76.47 3.78 1.39.08 3.75.04 10 .04 12.13 0 2.33 0 6.4-.09 8.97z"/></defs><g><g transform="translate(-1089 -8977)"><use fill="#0f1a4d" xlink:href="#ess0a"/></g></g></svg>
+						</div>
+						<div class="title">@orenkonvert</div>
+					</div>
+					<div id="instafeed"></div>
+				</div>
+			</div>
+			<div class="questions__logosoc">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+				<div class="social">
+					<span>Наши социальные сети</span>
+					<ul>
+						<li><a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="so5pa" d="M1433.15 9604h18.7c2.3 0 4.15 1.86 4.15 4.15v18.7c0 2.29-1.86 4.15-4.15 4.15h-18.7a4.16 4.16 0 0 1-4.15-4.16v-18.69c0-2.3 1.86-4.15 4.15-4.15zm9.2 18.93h1.1s.34-.04.51-.22c.16-.17.15-.49.15-.49s-.02-1.5.67-1.71c.68-.22 1.55 1.43 2.47 2.06.7.48 1.22.36 1.22.36h2.47s1.29-.1.68-1.11c-.05-.09-.36-.75-1.84-2.12-1.54-1.44-1.33-1.2.53-3.69 1.13-1.51 1.59-2.43 1.44-2.83-.13-.37-.96-.3-.96-.3l-2.78-.01s-.2-.02-.36.07a.78.78 0 0 0-.24.32s-.44 1.2-1.03 2.19c-1.24 2.1-1.73 2.2-1.93 2.08-.47-.3-.35-1.22-.35-1.87 0-2.04.3-2.89-.6-3.1a4.7 4.7 0 0 0-1.3-.13c-1-.01-1.83 0-2.3.23-.32.16-.56.5-.41.52.18.03.6.11.81.41.29.39.28 1.26.28 1.26s.16 2.4-.38 2.69c-.38.2-.89-.21-2-2.12-.56-.97-.98-2.07-.98-2.07s-.08-.2-.23-.31a1.14 1.14 0 0 0-.43-.17h-2.64s-.4.01-.54.18c-.13.16 0 .47 0 .47s2.06 4.87 4.4 7.3c2.14 2.24 4.57 2.1 4.57 2.1z"/></defs><g><g transform="translate(-1429 -9604)"><use fill="#4a76a7" xlink:href="#so5pa"/></g></g></svg>
+						</a></li>
+						<li><a href="#">
+							<img src="img/in.png" alt="">
+						</a></li>
+						<li><a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="23" viewBox="0 0 33 23"><defs><path id="tpua" d="M1544.68 9610.98s.33 2.67.33 5.34v2.4c0 2.67-.33 5.34-.33 5.34s-.32 2.28-1.31 3.28c-1.26 1.31-2.66 1.32-3.31 1.4-4.62.33-11.56.34-11.56.34s-8.59-.08-11.23-.33c-.73-.14-2.38-.1-3.64-1.41-.99-1-1.31-3.28-1.31-3.28s-.33-2.67-.33-5.34v-2.4c0-2.67.33-5.34.33-5.34s.32-2.28 1.31-3.28c1.26-1.32 2.66-1.32 3.3-1.4 4.63-.33 11.56-.33 11.56-.33h.02s6.93 0 11.55.33c.65.08 2.05.08 3.3 1.4 1 1 1.32 3.28 1.32 3.28zm-19.59 10.88l8.92-4.62-8.92-4.66z"/></defs><g><g transform="translate(-1512 -9606)"><use fill="#fe0302" xlink:href="#tpua"/></g></g></svg>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="copy">
+				&copy; ОренКонверт — Пошив товаров для новорожденных <br>
+				Все права защищены, 2016–2018
+			</div>
+			<a href="#" class="policy">
+				<span>Политика обработки
+				персональных данных</span>
+			</a>
+			<a href="#" class="kluev">
+				<div class="icon">
+					<img src="img/kluev-logo.png" alt="">
+				</div>
+				<span>Сайт создан в маркетинговом <br>
+				агентстве KLUEV.BZ</span>
+			</a>
+		</div>
+	</footer>
+
+</main>
+
+
+<div class="hidden" id="hidden"></div>
+<div class="hidden-block">
+	<div class="share-popup mfp-with-anim" id="share1" data-month="10">
+		<div class="share-info share-info-1"></div>
+		<div class="share-descr">
+			<div class="title">Описание и условия акции</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesquer rhoncus aliquam mattis. Ut vulputate eros sed felis sodales.</p>
+				<div class="condition">
+					<div class="caption">Условия участия:</div>
+					<ul>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam</li>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam</li>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam</li>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsa</li>
+					</ul>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet.</p>
+			</div>
+		</div>
+		<div class="share_former">
+			<div class="share_former-left">
+				<div class="share_former-left_manager">
+					<div class="share_former-left_manager-image">
+						<img src="./img/manager.png" alt="">
+					</div>
+					<div class="share_former-left_manager-text">
+						<div class="name">Дарья Болдова</div>
+						<div class="post">
+							<div class="icon">
+								<svg width="11" height="12"><use xlink:href="#adminIcon"></use></svg>
+							</div>
+							<span>Администратор</span>
+						</div>
+					</div>
+				</div>
+				<div class="share_former-left_anyque">
+					<img src="./img/any-question.png" alt="">
+				</div>
+			</div>
+			<div class="share_former-form">
+				<form class="phone-form">
+					<input type="hidden" name="project_name" value="ОренКонверт">
+					<input type="hidden" name="admin_email" value="maxgraph23@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта ОренКонверт">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="tel" name="tel" placeholder="Номер телефона">
+					<button type="submit">
+						<svg width="13" height="13"><use xlink:href="#phoneIcon"></use></svg>
+						<span>Перезвоните мне</span>
+					</button>
+					<div class="prim">Нажимая на кнопку, вы соглашаетесь с нашей <br>
+					<a href="#">политикой обработки персональных данных</a></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="share-popup mfp-with-anim" id="share2" data-month="10">
+		<div class="share-info share-info-2"></div>
+		<div class="share-descr">
+			<div class="title">Описание и условия акции</div>
+			<div class="text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesquer rhoncus aliquam mattis. Ut vulputate eros sed felis sodales.</p>
+				<div class="condition">
+					<div class="caption">Условия участия:</div>
+					<ul>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam</li>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam</li>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam</li>
+						<li>Pellentesque arcu mauris, malesuada quis ornare accumsa</li>
+					</ul>
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet.</p>
+			</div>
+		</div>
+		<div class="share_former">
+			<div class="share_former-left">
+				<div class="share_former-left_manager">
+					<div class="share_former-left_manager-image">
+						<img src="./img/manager.png" alt="">
+					</div>
+					<div class="share_former-left_manager-text">
+						<div class="name">Дарья Болдова</div>
+						<div class="post">
+							<div class="icon">
+								<svg width="11" height="12"><use xlink:href="#adminIcon"></use></svg>
+							</div>
+							<span>Администратор</span>
+						</div>
+					</div>
+				</div>
+				<div class="share_former-left_anyque">
+					<img src="./img/any-question.png" alt="">
+				</div>
+			</div>
+			<div class="share_former-form">
+				<form class="phone-form">
+					<input type="hidden" name="project_name" value="Русский металл">
+					<input type="hidden" name="admin_email" value="maxgraph23@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Русский металл">
+					<input type="text" name="name" placeholder="Ваше имя">
+					<input type="tel" name="tel" placeholder="Номер телефона">
+					<button type="submit">
+						<svg width="13" height="13"><use xlink:href="#phoneIcon"></use></svg>
+						<span>Перезвоните мне</span>
+					</button>
+					<div class="prim">Нажимая на кнопку, вы соглашаетесь с нашей <br>
+					<a href="#">политикой обработки персональных данных</a></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="share-popup mfp-with-anim" id="share3" data-month="9">
+		<div class="share-info share-info-1"></div>
+	</div>
+	<div class="share-popup mfp-with-anim" id="share4" data-month="9">
+		<div class="share-info share-info-2"></div>
+	</div>
+	<div class="order-popup mfp-with-anim" id="order-popup">
+		<form class="order-form">
+			<!-- <input type="hidden" name="project_name" value="Русский металл">
+			<input type="hidden" name="admin_email" value="maxgraph23@gmail.com">
+			<input type="hidden" name="form_subject" value="Заявка с сайта Русский металл"> -->
+			<div class="order-popup_manager">
+				<div class="order-popup_manager-image">
+					<img src="./img/manager.png" alt="">
+				</div>
+				<div class="order-popup_manager-text">
+					<div class="name">Дарья Болдова</div>
+					<div class="post">
+						<div class="icon">
+							<svg width="11" height="12"><use xlink:href="#adminIcon"></use></svg>
+						</div>
+						<span>Администратор</span>
+					</div>
+				</div>
+			</div>
+			<div class="order-popup_anyque">
+				<img src="img/anyq.png" alt="">
+			</div>
+			<div class="order-popup_mainorder">
+				<div class="quantity">Товаров в заказе: <span><span class="qua">6</span> шт.</span></div>
+				<div class="price">Общая сумма заказа: <span><span class="summ">45 700</span> <span class="rubl">&#8381;</span></span> <span class="prim">(Бесплатная доставка)</span></div>
+				<a href="#" class="order-list">
+					Состав заказа 
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="6" viewBox="0 0 10 6"><defs><path id="nt2na" d="M851.29 1074.36a.72.72 0 0 1 1.03 0c.28.29.6.72.31 1.01l-4.1 4.12a.75.75 0 0 1-1.06 0l-4.1-4.12c-.29-.29.02-.72.31-1a.72.72 0 0 1 1.03 0l3.29 3.21z"/></defs><g><g transform="translate(-843 -1074)"><use fill="#989cb2" xlink:href="#nt2na"/></g></g></svg>
+					</div>
+				</a>
+				<div class="order-products"></div>
+			</div>
+			<div class="input-form">
+				<label for="order-name">Ваше имя</label>
+				<input type="text" id="order-name" class="name-input" name="name">
+			</div>
+			<div class="input-form">
+				<label for="order-tel">Номер телефона</label>
+				<input type="tel" id="order-tel" class="tel-input" name="tel" placeholder="+7 (___) ___-__-__">
+			</div>
+			<div class="input-form">
+				<label for="order-mail">Электронная почта</label>
+				<input type="email" id="order-mail" class="mail-input" name="email" placeholder="address@mail.ru">
+			</div>
+			<div class="button-form">
+				<button type="submit">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="12" viewBox="0 0 16 12"><defs><path id="kk3la" d="M901.41 1356.41l-2 2-6 6a2 2 0 0 1-2.82 0l-4-4A2 2 0 0 1 888 1357a2 2 0 0 1 1.41.58l2.59 2.59 4.59-4.59 2-2a2 2 0 1 1 2.83 2.83z"/></defs><g><g transform="translate(-886 -1353)"><use fill="#fff" xlink:href="#kk3la"/></g></g></svg>
+					<span>Оставить заявку</span>
+				</button>
+			</div>
+			<div class="prims">Нажимая на кнопку, вы соглашаетесь с нашей <br>
+			<a href="#">политикой обработки персональных данных</a></div>
+		</form>
+	</div>
+	<div class="thanks-popup mfp-with-anim" id="thanks-popup">
+		<div class="svg">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="148" height="120" viewBox="0 0 148 120"><defs><path id="yxfia" d="M957 719.12c-13.23 0-24-10.76-24-24a4 4 0 0 1 8 0c0 8.82 7.18 16 16 16s16-7.18 16-16a4 4 0 1 1 8 0c0 13.24-10.77 24-24 24zM915 743a4 4 0 0 0 4 4h76a4 4 0 0 0 4-4v-60h-84zm42-84a16.01 16.01 0 0 0-13.85 8h27.7c-2.77-4.78-7.94-8-13.85-8zm0-8a24.04 24.04 0 0 1 22.63 16H995a4 4 0 0 1 2.83 1.17l7.94 7.94A3.99 3.99 0 0 1 1007 679v64c0 6.61-5.38 12-12 12h-76c-6.62 0-12-5.39-12-12v-64c0-1.14.47-2.16 1.23-2.9l7.94-7.93A4 4 0 0 1 919 667h15.37c3.3-9.32 12.2-16 22.63-16z"/><path id="yxfib" d="M1017 695a38 38 0 1 1 0 76 38 38 0 0 1 0-76z"/><path id="yxfid" d="M1033.83 729.82l-4 4-12 12a4 4 0 0 1-5.66 0l-8-8a4 4 0 0 1 5.66-5.66l5.17 5.18 9.17-9.17 4-4a3.99 3.99 0 0 1 6.83 2.82c0 1.1-.45 2.11-1.17 2.83z"/><linearGradient id="yxfic" x1="979" x2="1055" y1="733" y2="733" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00a7cc"/><stop offset="1" stop-color="#23bad4"/></linearGradient></defs><g><g transform="translate(-907 -651)"><g><use fill="#0f1a4d" xlink:href="#yxfia"/></g><g><use fill="#00a7cc" xlink:href="#yxfib"/><use fill="url(#yxfic)" xlink:href="#yxfib"/></g><g><use fill="#fff" xlink:href="#yxfid"/></g></g></g></svg>
+		</div>
+		<div class="title">Спасибо что сделали заказ! <br>
+		Дарья свяжется с Вами в рабочее время</div>
+		<div class="bottom-block">
+			<span class="pr">Пока заявка обрабатывается предлагаем познакомиться <br>
+			и подписаться на наши социальные сети</span>
+			<div class="links-block">
+				<a href="#" target="_blank" class="vk">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="vzana2" d="M399.15 3004h18.7c2.3 0 4.15 1.86 4.15 4.15v18.7c0 2.29-1.86 4.15-4.15 4.15h-18.7a4.16 4.16 0 0 1-4.15-4.16v-18.69c0-2.3 1.86-4.15 4.15-4.15zm9.2 18.93h1.1s.34-.04.51-.22c.16-.17.15-.49.15-.49s-.02-1.5.67-1.71c.68-.22 1.55 1.43 2.47 2.06.7.48 1.22.36 1.22.36h2.47s1.29-.1.68-1.11c-.05-.09-.36-.75-1.84-2.12-1.54-1.44-1.33-1.2.53-3.69 1.13-1.51 1.59-2.43 1.44-2.83-.13-.37-.96-.3-.96-.3l-2.78-.01s-.2-.02-.36.07a.78.78 0 0 0-.24.32s-.44 1.2-1.03 2.19c-1.24 2.1-1.73 2.2-1.93 2.08-.47-.3-.35-1.22-.35-1.87 0-2.04.3-2.89-.6-3.1-.3-.08-.53-.13-1.3-.13-1-.01-1.83 0-2.3.23-.32.16-.56.5-.41.52.18.02.6.11.81.41.29.39.28 1.26.28 1.26s.16 2.4-.38 2.69c-.38.2-.89-.21-2-2.12-.56-.97-.98-2.07-.98-2.07s-.08-.2-.23-.31a1.15 1.15 0 0 0-.43-.17h-2.64s-.4 0-.54.18c-.13.16 0 .47 0 .47s2.06 4.87 4.4 7.3c2.14 2.24 4.57 2.1 4.57 2.1z"/></defs><g><g transform="translate(-395 -3004)"><use fill="#fff" xlink:href="#vzana2"/></g></g></svg>
+					</div>
+					<span>ВКонтакте</span>
+					<div class="arrow">
+						<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+					</div>
+				</a>
+				<a href="#" target="_blank" class="insta">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="dur8a2" d="M408.5 3081.01c3.66 0 4.12.02 5.56.08 1.43.07 2.41.3 3.27.63.89.34 1.64.8 2.4 1.55a6.6 6.6 0 0 1 1.55 2.4c.33.85.56 1.84.63 3.27.06 1.44.08 1.9.08 5.56 0 3.67-.02 4.13-.08 5.57a9.9 9.9 0 0 1-.63 3.27c-.35.9-.8 1.64-1.56 2.4a6.62 6.62 0 0 1-2.39 1.55c-.86.33-1.84.56-3.27.63-1.44.06-1.9.08-5.57.08-3.66 0-4.12-.02-5.56-.08a9.89 9.89 0 0 1-3.28-.63 6.62 6.62 0 0 1-2.39-1.56 6.61 6.61 0 0 1-1.55-2.39 9.9 9.9 0 0 1-.63-3.27c-.06-1.44-.08-1.9-.08-5.57 0-3.66.02-4.12.08-5.56a9.9 9.9 0 0 1 .63-3.27 6.6 6.6 0 0 1 1.55-2.4 6.63 6.63 0 0 1 2.4-1.55 9.94 9.94 0 0 1 3.27-.63c1.44-.06 1.9-.08 5.56-.08 0 0-3.66 0 0 0zm0 2.43c-3.6 0-4.04.02-5.46.08a7.43 7.43 0 0 0-2.5.47c-.63.24-1.08.53-1.56 1-.47.48-.76.93-1 1.56-.19.47-.41 1.19-.47 2.5a93.59 93.59 0 0 0-.08 5.45c0 3.6.01 4.03.08 5.46.06 1.31.28 2.03.46 2.5.25.63.54 1.08 1.01 1.55.48.48.93.77 1.56 1.01.47.19 1.19.4 2.5.47 1.42.06 1.85.08 5.45.08s4.03-.02 5.46-.08a7.48 7.48 0 0 0 2.5-.47 4.19 4.19 0 0 0 1.55-1c.48-.48.77-.93 1.01-1.56.19-.47.4-1.19.47-2.5.06-1.43.08-1.85.08-5.46 0-3.6-.02-4.03-.08-5.45a7.47 7.47 0 0 0-.47-2.5 4.18 4.18 0 0 0-1-1.56 4.17 4.17 0 0 0-1.56-1 7.43 7.43 0 0 0-2.5-.47 94.08 94.08 0 0 0-5.46-.08s3.6 0 0 0zm0 3.8a7.27 7.27 0 1 1 0 14.53 7.27 7.27 0 0 1 0-14.53s-4.02 0 0 0zm0 11.94a4.67 4.67 0 1 0 0-9.35 4.67 4.67 0 0 0 0 9.35s-2.59 0 0 0zm9.02-11.84a1.66 1.66 0 1 1-3.32 0 1.66 1.66 0 0 1 3.32 0"/></defs><g><g transform="translate(-395 -3081)"><use fill="#fff" xlink:href="#dur8a2"/></g></g></svg>
+					</div>
+					<span>Instagram</span>
+					<div class="arrow">
+						<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+					</div>
+				</a>
+				<a href="#" target="_blank" class="youtube">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="21" viewBox="0 0 29 21"><defs><path id="jd4ka2" d="M422.2 3165.95s.27 2.27.27 4.53v2.02c0 2.26-.28 4.52-.28 4.52s-.27 1.93-1.1 2.78c-1.07 1.11-2.26 1.12-2.8 1.18-3.92.28-9.79.3-9.79.3s-7.26-.07-9.5-.29c-.62-.11-2.02-.08-3.08-1.2-.84-.84-1.11-2.77-1.11-2.77s-.28-2.26-.28-4.52v-2.02c0-2.26.28-4.53.28-4.53s.27-1.92 1.1-2.77c1.07-1.11 2.26-1.12 2.8-1.18 3.92-.28 9.78-.28 9.78-.28h.02s5.86 0 9.77.28c.55.06 1.74.07 2.8 1.18.84.85 1.11 2.77 1.11 2.77zm-16.58 9.21l7.54-3.9-7.55-3.95z"/></defs><g><g transform="translate(-394 -3161)"><use fill="#fff" xlink:href="#jd4ka2"/></g></g></svg>
+					</div>
+					<span>Instagram</span>
+					<div class="arrow">
+						<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="phone-popup mfp-with-anim" id="phone-popup">
+		<div class="svg">
+			<img src="img/thanks-phone.jpg" alt="">
+		</div>
+		<div class="title">Спасибо что оставили заявку! <br>
+		Дарья свяжется с Вами в рабочее время</div>
+		<div class="bottom-block">
+			<span class="pr">Пока заявка обрабатывается предлагаем познакомиться <br>
+			и подписаться на наши социальные сети</span>
+			<div class="links-block">
+				<a href="#" target="_blank" class="vk">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="vzana" d="M399.15 3004h18.7c2.3 0 4.15 1.86 4.15 4.15v18.7c0 2.29-1.86 4.15-4.15 4.15h-18.7a4.16 4.16 0 0 1-4.15-4.16v-18.69c0-2.3 1.86-4.15 4.15-4.15zm9.2 18.93h1.1s.34-.04.51-.22c.16-.17.15-.49.15-.49s-.02-1.5.67-1.71c.68-.22 1.55 1.43 2.47 2.06.7.48 1.22.36 1.22.36h2.47s1.29-.1.68-1.11c-.05-.09-.36-.75-1.84-2.12-1.54-1.44-1.33-1.2.53-3.69 1.13-1.51 1.59-2.43 1.44-2.83-.13-.37-.96-.3-.96-.3l-2.78-.01s-.2-.02-.36.07a.78.78 0 0 0-.24.32s-.44 1.2-1.03 2.19c-1.24 2.1-1.73 2.2-1.93 2.08-.47-.3-.35-1.22-.35-1.87 0-2.04.3-2.89-.6-3.1-.3-.08-.53-.13-1.3-.13-1-.01-1.83 0-2.3.23-.32.16-.56.5-.41.52.18.02.6.11.81.41.29.39.28 1.26.28 1.26s.16 2.4-.38 2.69c-.38.2-.89-.21-2-2.12-.56-.97-.98-2.07-.98-2.07s-.08-.2-.23-.31a1.15 1.15 0 0 0-.43-.17h-2.64s-.4 0-.54.18c-.13.16 0 .47 0 .47s2.06 4.87 4.4 7.3c2.14 2.24 4.57 2.1 4.57 2.1z"/></defs><g><g transform="translate(-395 -3004)"><use fill="#fff" xlink:href="#vzana"/></g></g></svg>
+					</div>
+					<span>ВКонтакте</span>
+					<div class="arrow">
+						<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+					</div>
+				</a>
+				<a href="#" target="_blank" class="insta">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27"><defs><path id="dur8a" d="M408.5 3081.01c3.66 0 4.12.02 5.56.08 1.43.07 2.41.3 3.27.63.89.34 1.64.8 2.4 1.55a6.6 6.6 0 0 1 1.55 2.4c.33.85.56 1.84.63 3.27.06 1.44.08 1.9.08 5.56 0 3.67-.02 4.13-.08 5.57a9.9 9.9 0 0 1-.63 3.27c-.35.9-.8 1.64-1.56 2.4a6.62 6.62 0 0 1-2.39 1.55c-.86.33-1.84.56-3.27.63-1.44.06-1.9.08-5.57.08-3.66 0-4.12-.02-5.56-.08a9.89 9.89 0 0 1-3.28-.63 6.62 6.62 0 0 1-2.39-1.56 6.61 6.61 0 0 1-1.55-2.39 9.9 9.9 0 0 1-.63-3.27c-.06-1.44-.08-1.9-.08-5.57 0-3.66.02-4.12.08-5.56a9.9 9.9 0 0 1 .63-3.27 6.6 6.6 0 0 1 1.55-2.4 6.63 6.63 0 0 1 2.4-1.55 9.94 9.94 0 0 1 3.27-.63c1.44-.06 1.9-.08 5.56-.08 0 0-3.66 0 0 0zm0 2.43c-3.6 0-4.04.02-5.46.08a7.43 7.43 0 0 0-2.5.47c-.63.24-1.08.53-1.56 1-.47.48-.76.93-1 1.56-.19.47-.41 1.19-.47 2.5a93.59 93.59 0 0 0-.08 5.45c0 3.6.01 4.03.08 5.46.06 1.31.28 2.03.46 2.5.25.63.54 1.08 1.01 1.55.48.48.93.77 1.56 1.01.47.19 1.19.4 2.5.47 1.42.06 1.85.08 5.45.08s4.03-.02 5.46-.08a7.48 7.48 0 0 0 2.5-.47 4.19 4.19 0 0 0 1.55-1c.48-.48.77-.93 1.01-1.56.19-.47.4-1.19.47-2.5.06-1.43.08-1.85.08-5.46 0-3.6-.02-4.03-.08-5.45a7.47 7.47 0 0 0-.47-2.5 4.18 4.18 0 0 0-1-1.56 4.17 4.17 0 0 0-1.56-1 7.43 7.43 0 0 0-2.5-.47 94.08 94.08 0 0 0-5.46-.08s3.6 0 0 0zm0 3.8a7.27 7.27 0 1 1 0 14.53 7.27 7.27 0 0 1 0-14.53s-4.02 0 0 0zm0 11.94a4.67 4.67 0 1 0 0-9.35 4.67 4.67 0 0 0 0 9.35s-2.59 0 0 0zm9.02-11.84a1.66 1.66 0 1 1-3.32 0 1.66 1.66 0 0 1 3.32 0"/></defs><g><g transform="translate(-395 -3081)"><use fill="#fff" xlink:href="#dur8a"/></g></g></svg>
+					</div>
+					<span>Instagram</span>
+					<div class="arrow">
+						<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+					</div>
+				</a>
+				<a href="#" target="_blank" class="youtube">
+					<div class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="21" viewBox="0 0 29 21"><defs><path id="jd4ka" d="M422.2 3165.95s.27 2.27.27 4.53v2.02c0 2.26-.28 4.52-.28 4.52s-.27 1.93-1.1 2.78c-1.07 1.11-2.26 1.12-2.8 1.18-3.92.28-9.79.3-9.79.3s-7.26-.07-9.5-.29c-.62-.11-2.02-.08-3.08-1.2-.84-.84-1.11-2.77-1.11-2.77s-.28-2.26-.28-4.52v-2.02c0-2.26.28-4.53.28-4.53s.27-1.92 1.1-2.77c1.07-1.11 2.26-1.12 2.8-1.18 3.92-.28 9.78-.28 9.78-.28h.02s5.86 0 9.77.28c.55.06 1.74.07 2.8 1.18.84.85 1.11 2.77 1.11 2.77zm-16.58 9.21l7.54-3.9-7.55-3.95z"/></defs><g><g transform="translate(-394 -3161)"><use fill="#fff" xlink:href="#jd4ka"/></g></g></svg>
+					</div>
+					<span>Instagram</span>
+					<div class="arrow">
+						<svg width="8" height="13"><use xlink:href="#rightArrow"></use></svg>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="team-popup mfp-with-anim" id="team-popup">
+		<div class="popup-content"></div>
+	</div>
+	<div class="map-popup mfp-with-anim" id="map-popup">
+		<span><img data-src="img/adress.png" src="#" alt="" class="lazy">Адрес шоу-рума</span>
+		<p>г. Оренбург, ул. Терешковой, 7 (офис 6)</p>
+		<div id="map"></div>
+	</div>
+</div>
+	<script src="libs/jquery/jquery-2.1.3.min.js"></script>
+	<script src="libs/sortElements.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/jquery.lazy.min.js"></script>
+	<script src="libs/jquery.maskedinput.min.js"></script>
+	<script src="libs/jquery.magnific-popup.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/jquery.validate.min.js"></script>
+	<script src="libs/nav.js"></script>
+	<script src="libs/jquery.mCustomScrollbar.js"></script>
+	<script src="libs/instafeed.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="libs/jquery.dotdotdot.min.js"></script>
+	<script src="libs/jquery.cookie.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
