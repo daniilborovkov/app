@@ -2573,17 +2573,18 @@ $(document).ready(function(){
 	// 6. recalculate used images
 	// 7. recalculate new arrays
 	function recalculateArrays() {
+		console.log(nowShows);
 		// exclude from used images now shows
-		nowShows.forEach(function (item) {
-			var indexUsed = usedImages.indexOf(item);
-			
-			if (indexUsed > -1) {
+		usedImages.forEach(function (item) {
+			var indexUsed = nowShows.indexOf(item);
+			if (indexUsed === -1) {
 				// write it to unused
 				unusedImages.push(item);
 				usedImages.slice(indexUsed, 1);
 				console.log(' push to unused ' + item)
 			}
-		});
+			
+		})
 		timer = setInterval(randomImagesChange, 4 * 1000)
 	}
 	// 8. fill unused images
