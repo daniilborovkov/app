@@ -2525,12 +2525,14 @@ $(document).ready(function(){
 	// 3. define images index max
 	var maxIndex = 31;
 	// 4. function to change random images in interval
-	function randomImagesChange() {			
-		// },600);
-		setInterval(function () {
+
+	var timer = setInterval(randomImagesChange, 3 * 1000);
+
+	function randomImagesChange() {
 			// get random index for line change
 			var lineIndex = getRandom(1, maxIndex);
 			// TODO: remove old image from show now
+			nowShows.splice(nowShows.indexOf($('.grid-item[data-index='+ lineIndex +']').find('img').attr('src')), 1);
 			// get random image from unused
 			var unusedIndex = Math.floor(Math.random() * unusedImages.length);
 			var unusedSrc = unusedImages[unusedIndex];
@@ -2546,10 +2548,27 @@ $(document).ready(function(){
 			usedImages.push(unusedSrc);
 			// check usused images length
 			console.log('change image ' + unusedSrc + ' on line-index ' + lineIndex);
-		}, 3 * 1000);
+
+			if (unusedImages.length < 1) {
+				clearInterval(timer);
+				fillImages();
+
+			}
 	}
-	// TODO: 6. recalculate used images
-	// TODO: 7. recalculate new arrays
+	// 6. recalculate used images
+	// 7. recalculate new arrays
+	function recalculateArrays() {
+		// exclude from used images now shows
+		nowShows.forEach(function (item) {
+			var indexUsed = usedImages.indexOf(item);
+			if (indexUsed != -1) {
+				// write it to unused
+				unusedImages.push(item);
+				usedImages.slice(indexUsed, 1);
+			}
+		});
+		timer = setInterval(randomImagesChange, 3 * 1000)
+	}
 	// 8. fill unused images
 	function fillImages() {
 		// fill used images array
@@ -2576,69 +2595,6 @@ $(document).ready(function(){
 	// Рандомная картинка в рандомном блоке на 1 экране (каждые 5 секунд)
 	// var usedImages = [];
 	// setInterval(function(){
-		
-		
-
-	// 	var randomNumber = getRandom(1, 31);
-	// 	var randArr = getRandom(0, 30);
-
-	// 	let arrImages = [
-	// 		'./img/header-images/1.jpg',
-	// 		'./img/header-images/2.jpg',
-	// 		'./img/header-images/3.jpg',
-	// 		'./img/header-images/4.jpg',
-	// 		'./img/header-images/5.jpg',
-	// 		'./img/header-images/6.jpg',
-	// 		'./img/header-images/7.jpg',
-	// 		'./img/header-images/8.jpg',
-	// 		'./img/header-images/9.jpg',
-	// 		'./img/header-images/10.jpg',
-	// 		'./img/header-images/11.jpg',
-	// 		'./img/header-images/12.jpg',
-	// 		'./img/header-images/13.jpg',
-	// 		'./img/header-images/14.jpg',
-	// 		'./img/header-images/15.jpg',
-	// 		'./img/header-images/16.jpg',
-	// 		'./img/header-images/17.jpg',
-	// 		'./img/header-images/18.jpg',
-	// 		'./img/header-images/19.jpg',
-	// 		'./img/header-images/20.jpg',
-	// 		'./img/header-images/21.jpg',
-	// 		'./img/header-images/22.jpg',
-	// 		'./img/header-images/23.jpg',
-	// 		'./img/header-images/24.jpg',
-	// 		'./img/header-images/25.jpg',
-	// 		'./img/header-images/26.jpg',
-	// 		'./img/header-images/27.jpg',
-	// 		'./img/header-images/28.jpg',
-	// 		'./img/header-images/29.jpg',
-	// 		'./img/header-images/30.jpg',
-	// 		'./img/header-images/31.jpg',
-	// 	];
-
-
-		//console.log(randomNumber);
-		//console.log(randArr);
-		
-		
-		//console.log(usedImages);
-		// $('.grid-item[data-index='+ randomNumber +']').find('img').fadeOut();
-		// setTimeout(function(){
-		// 	if (usedImages.indexOf(randArr) != -1) {
-		// 		//console.log('index ' + randArr);
-		// 		//randArr = getRandom(0, 30);
-		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
-		// 		//$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
-		// 	} else {
-		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').attr('src', arrImages[randArr]);
-		// 		$('.grid-item[data-index='+ randomNumber +']').find('img').fadeIn();
-				
-		// 	}
-		// 	usedImages.push(randArr);
-			
-		// },600);
-		
-	// },3000);
 
 	// Полоса с фотками
 	/*$("#scroller").simplyScroll({
