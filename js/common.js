@@ -2534,18 +2534,18 @@ $(document).ready(function(){
 
 	// last index to remove repeat
 	var lastIndex = 0;
-	var indexMain = 0;
 	var timer;
 
 	function randomImagesChange() {
 			// get random index for line change
 			var lineIndex = getRandom(1, maxIndex);
 			// TODO: remove old image from show now
-			nowShows.splice(nowShows.indexOf($('.grid-item[data-index='+ lineIndex +']').find('img').attr('src')), 1);
+			var nowToRemove = $('.grid-item[data-index='+ lineIndex +']').find('img').attr('src');
+			nowShows.splice(nowShows.indexOf(nowToRemove), 1);
+			console.log('nowToRemove', nowToRemove )
 			// get random image from unused
 			var unusedIndex = unusedImages.length > 1 ? Math.floor(Math.random() * (unusedImages.length - 1)) : 0;
 			var unusedSrc = unusedImages[unusedIndex];
-			console.log("unused index " + unusedIndex + " with src " + unusedSrc + " of total count " + unusedImages.length );
 			// add src to shows now
 			nowShows.push(unusedSrc);
 			// change image
@@ -2575,16 +2575,11 @@ $(document).ready(function(){
 	function recalculateArrays() {
 		console.log(nowShows);
 		// exclude from used images now shows
-		usedImages.forEach(function (item) {
-			var indexUsed = nowShows.indexOf(item);
-			if (indexUsed === -1) {
-				// write it to unused
-				unusedImages.push(item);
-				usedImages.slice(indexUsed, 1);
-				console.log(' push to unused ' + item)
-			}
-			
-		})
+		usedImages = [];
+		nowShows = [];
+		unusedImages = [];
+		fillImages();
+		// 
 		timer = setInterval(randomImagesChange, 4 * 1000)
 	}
 	// 8. fill unused images
@@ -2602,7 +2597,12 @@ $(document).ready(function(){
 				unusedImages.push(imgSrc);
 			}
 		});	
-		console.log(nowShows.length);
+		console.log('now shows length', nowShows.length);
+	}
+
+	function writeDebugLog(msg) {
+		var msgs = "unusedImages:" + unusedImages.length + " \n" + "used images length: " + usedImages.length + " \n" + "debug message: " + msg;
+		console.log(msgs);
 	}
 
 	$(document).ready(function () {
