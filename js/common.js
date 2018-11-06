@@ -2690,7 +2690,22 @@ $(document).ready(function(){
     function declOfNum(number, titles) {  
 	    var cases = [2, 0, 1, 1, 1, 2];  
 	    return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
-	}
+	};
+
+	$(document).ready(function () {
+		// set endless scroll
+		$('.infinte-scroll').slick({
+			autoplay: true,
+			infinite: true,
+			slidesToShow: 9,
+			slidesToScroll: 1,
+
+			speed: 10000,
+			autoplaySpeed: 0,
+			cssEase: 'linear',
+			variableWidth: true
+		});
+	})
 
 
     
