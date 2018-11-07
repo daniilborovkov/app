@@ -2699,11 +2699,13 @@ $(document).ready(function(){
 			infinite: true,
 			slidesToShow: 9,
 			slidesToScroll: 1,
-
 			speed: 10000,
 			autoplaySpeed: 0,
 			cssEase: 'linear',
-			variableWidth: true
+			// variableWidth: true,
+			arrows:false,
+			dots: false,
+			useTransform: true,
 		});
 	})
 
