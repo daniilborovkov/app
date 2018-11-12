@@ -3071,6 +3071,12 @@ html * {
       background-size: cover;
       background-position: center;
       z-index: -1; }
+  .scrollers ul li img {
+    border-left: 2px #f2f7fa solid;
+  }
+  .scrollers ul li img:first-child {
+    border-bottom: 2px #f2f7fa solid;
+  }
   .image-line .scroller {
     height: 100%;
     width: 1903px;
@@ -3102,13 +3108,13 @@ html * {
       display: flex;
       -webkit-animation: scroller 100s linear infinite;
       animation: scroller 100s linear infinite; }
-    .image-line .scroller li, .image-line .scrollers li {
+    .image-line .scroller li, .image-line .scroller li {
       width: 100%;
       border-left: 2px #f2f7fa solid;
       border-right: 2px #f2f7fa solid;
       font-size: 0;
       position: relative; }
-      .image-line .scroller li:after, .image-line .scrollers li:after {
+      .image-line .scroller li:after, .image-line .scroller li:after {
         content: '';
         position: absolute;
         top: 50%;
